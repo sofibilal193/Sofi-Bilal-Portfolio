@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/04847cf7d3.js" crossorigin="anonymous"></script>
+	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body onload="upDown()">
+<div class="container">
+	<div class="top_bar">
+		<div class="t_left">
+			<img src="images/logo.jpg" height="50" width="50">
+			<h3>BILAL AHMAD SOFI</h3>
+		</div>
+		<div class="t_right">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-linkedin"></i>
+			<i class="fa fa-github"></i>
+			<i class="fa fa-apple"></i>
+			<br>
+			<a href="#" onclick="window.open('NoidaResume.pdf');">See My CV <i class="far fa-book"></i></a>
+		</div>
+	</div>
+	<br>
+	<div class="intro">
+		<div class="in_left">
+			<i class="fas fa-brackets"></i>
+			<p> I am </p>
+			<ul>
+				<li class="names">Web Developer</li>
+				<li class="names">Programmer</li>
+				<li class="names">Looser</li>
+				<li class="names">Sakht Launda</li>
+				<li class="names">Debugger</li>
+			</ul>
+			<br>
+			<p>
+				Hello, I am Bilal Ahmad Sofi, a researcher with two publications, an artificial intelligence and data science enthusiast, a full stack developer and, a graphics designer.
+			</p>
+			<script type="text/javascript">
+				var i =0;
+				var x = document.getElementsByClassName("names");
+
+				function upDown() {
+
+					if(i == x.length) {
+						i = 0;
+					}
+					for(j=0;j<x.length;j++) {
+						x[j].style.display = "none";
+					}
+					x[i].style.display = "block";
+					i+=1;
+					setTimeout(upDown, 2000);
+				}
+			</script>
+		</div>
+		<div class="in_right">
+			<img src="images/logo.jpg" width="300" height="300">
+		</div>
+	</div>
+	<br>
+	<div class="seeMyWork">
+		<button>See My Work <i class="fa fa-eye"></i></button>
+	</div>
+	<br>
+
+	<div class="work">
+		<div class="w_head"><h1>Work</h1></div>
+		<div class="w_sub_Head"><h3>Publications</h3> </div>
+		<div class="W_room">
+			<div class="w_box">
+				<p><b>Personalized Drug Concentrations With Machine Learning: An Exploratory Study</b></p>
+				<p>International Journal of Basic and Clinical Pharmacology</p>
+				<p>Published: <i>December, 2019</i></p>
+				<button>Read Full Text <i class="fa fa-book"></i></button><br>
+			</div>
+			<div class="w_box">
+				<p><b>Personalized Drug Concentrations With Machine Learning: An Exploratory Study</b></p>
+				<p>International Journal of Basic and Clinical Pharmacology</p>
+				<p>Published: <i>December, 2019</i></p>
+				<button>Read Full Text <i class="fa fa-book"></i></button><br>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="project">
+		<div class="p_head"><h1>Projects</h1></div>
+		<div class="p_room">
+			<div class="p_box">
+				<img src="images/logo.jpg">
+				<p><b>Litmus AI Web</b></p>
+				<p>Fake news detection using text features with Machine Learning. Technologies used-Python, SKLearn, Tensorflow, Keras, NLP, Heroku, HTML, CSS, JS, Flask.</p>
+				<p>Published: <i>December, 2019</i></p>
+				<button>View Project <i class="fa fa-eye"></i></button><br>
+			</div>
+			<div class="p_box">
+				<img src="images/logo.jpg">
+				<p><b>Litmus AI Web</b></p>
+				<p>Fake news detection using text features with Machine Learning. Technologies used-Python, SKLearn, Tensorflow, Keras, NLP, Heroku, HTML, CSS, JS, Flask.</p>
+				<p>Published: <i>December, 2019</i></p>
+				<button>View Project <i class="fa fa-eye"></i></button><br>
+			</div>
+		</div>
+	</div>
+	<div class="skills">
+		<div><h1>SKILLS</h1></div>
+		<div><h2>INDUSTRIAL KNOWLEDGE</h2></div>
+		<div class="sk_box">
+			<div style="background-color:white;">
+				<i class="iconify" data-icon="fa-solid:layer-group" data-inline="false"></i>
+			</div>
+			<div style="background-color:black;color:white;">
+				<b style="font-size:20px;">Full Stack Development</b>
+			</div>
+		</div>
+		<div class="sk_box">
+			<div style="background-color:white;">
+				<i class="iconify" data-icon="fa-solid:file-alt" data-inline="false"></i>
+			</div>
+			<div style="background-color:black;color:white;">
+				<b style="font-size:20px;">Research and Content Writing</b>
+			</div>
+		</div>
+		<div class="sk_box">
+			<div style="background-color:white;">
+				<i class="iconify" data-icon="fa-solid:chess-pawn" data-inline="false"></i>
+			</div>
+			<div style="background-color:black;color:white;">
+				<b style="font-size:20px;">Creative Strategy</b>
+			</div>
+		</div>
+		<div class="sk_box">
+			<div style="background-color:white;">
+				<i class="iconify" data-icon="fa-solid:pencil-ruler" data-inline="false"></i>
+			</div>
+			<div style="background-color:black;color:white;">
+				<b style="font-size:20px;">Data Science</b>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="TaT">
+		<div class="TaT_head"><h1>TOOLS AND TECHNOLOGIES</h1></div>
+		<div class="TaT_room" style="width:100%;">
+			<div class="ttBox">
+				<p>Python</p>
+				<p>Python</p>
+				<p>Python</p>
+			</div>
+			<div class="ttBox">
+				<p>Python</p>
+				<p>Python</p>
+				<p>Python</p>
+			</div>
+			<div class="ttBox">
+				<p>Python</p>
+				<p>Python</p>
+				<p>Python</p>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="AandC">
+		<div class="AnC_head">
+			<h1>AWARDS AND CERTIFICATIONS</h1>
+		</div>
+		<div class="And-room">
+			<ul>
+				<li><i class="fas fa-medal"></i> Research Presenter | ICCR</li>
+				<li><i class="fas fa-medal"></i> Research Presenter | ICCR</li>
+				<li><i class="fa fa-certificate" aria-hidden="true"></i> Web Development Using HTML | SBS Infosystems </li>
+			</ul> 
+		</div>
+	</div>
+	<br>
+	<div class="abtMe">
+		<div><h1>ABOUT ME</h1></div>
+		<div class="dp_intro">
+			<img src="images/logo.jpg" style="border-radius:50%;" width="180" height="180">
+			<p style="width:50%;">I am a 19-year old, from Budgam J&K, India, based in Chandigarh India. I am passionate about technology, particularly - Artificial Intelligence. I have been exploring, learning, and working with different technologies for around five years now. I have seven research publications, and I wish to pursue a higher degree in Data Science and AI. I am a huge football fan, and I love reading whatever I find. I also write poetry in English, and Kashmiri.
+			If you wish to contact me, or hire me, you may use the form below, or drop me a mail.</p>
+		</div>
+		<div class="info">
+			<ul>
+				<li><i class="fa fa-birthday-cake" aria-hidden="true"></i> Born On 4th Sep, 2000</li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i>From Rakhshalna Pampore, Jammu and Kashmir</li>
+				<li><i class="fa fa-flag" aria-hidden="true"></i> Live in Delhi, India</li>
+				<li><i class="fas fa-book-reader"></i>Education: 
+					<ul>
+						<li>Bachelor of Computer Science and Engineeing, JSS Academy of Technical Education, Noida (2017-2021)</li>
+					</ul>
+				</li>
+				<li><i class="fas fa-briefcase" aria-hidden="true"></i>Experience:
+					<ul>
+						<li>Subject Matter Expert, CHEGG INDIA Pvt. Ltd (Jan-2020 - Present)</li>
+						<li>Incharge and Web Developer, MUSHKIL KUSHA TRUS &#174;1989 (july-2020 - Present)</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<br>
+	<div class="contact">
+		<div><h1>GET IN TOUCH</h1></div>
+		<div class="inputDiv">
+			<form>
+				<input type="text" name="" placeholder="NAME"><br>
+				<input type="text" name="" placeholder="EMAIL"><br>
+				<input type="text" name="msg"  placeholder="MESSAGE"><br><br>
+				<button>SEND</button>
+			</form>
+		</div>
+	</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

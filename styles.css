@@ -1,0 +1,161 @@
+/*Top Bar*/
+		* {
+			font-family:sans-serif;
+		}
+		body {
+			background-color:lightblue;
+		}
+		.top_bar {
+			border:1px solid black;
+			width:100%;
+			display:block;
+			height:100px;
+		}
+		.t_right {
+			float:right;
+			
+			width:48%;
+			text-align:right;
+			margin-right:20px;
+		}
+		.t_left {
+			float:left;
+			
+			width:48%;
+		}
+		.t_left img {
+			display:inline-block;
+			margin-top:15px;
+		}
+		.t_left h3 {
+			display:inline-block;
+			font-weight:bold;
+			font-size:30px;
+			vertical-align:top;
+			margin-left:5px;
+		}
+		.t_right i {
+			font-size:40px;
+			cursor:pointer;
+		}
+		.t_right a {
+			font-size:25px;
+			text-decoration:none;
+			background-color:tomato;
+			padding:5px;
+		}
+		.t_right a i {
+			vertical-align:bottom;
+		}
+/*Introduction*/
+	.intro {
+		width:100%;
+		border:1px solid black;
+
+	}
+	.in_left {
+		border:1px solid black;
+		width:48%;
+		display:inline-block;
+		vertical-align:top;
+
+	}
+
+	.in_left p {
+		display:inline-block;
+	}
+	.in_left ul{
+		display:inline-block;
+	}
+	.in_left ul li {
+		list-style:none;
+		display:none;
+	} 
+
+	.in_right {
+		border:1px solid black;
+		width:48%;
+		display:inline-block;
+	}
+	.seeMyWork {
+		border:1px solid black;
+		text-align:center;
+	}
+	.seeMyWork button {
+		font-size: 35px;
+		background-color:orange;
+	}
+	.w_box {
+		width:24%;
+		border:1px solid black;
+		display:inline-block;
+		text-align:center;
+	}
+	.p_box {
+		width:24%;
+		border:1px solid black;
+		display:inline-block;
+		text-align:center;
+	}
+	.p_box img {
+		border-radius:50%;
+		width:50px;
+		height:50px;
+	}
+	.iconify {
+		font-size:50px;
+	}
+	.sk_box {
+	text-align:center;
+	width:10%;
+	height:20vh;
+	display:inline-block;
+	vertical-align:top;
+	}
+	.sk_box div {
+		height:50%;
+	}
+	.ttBox {
+		width:30%;
+		display:inline-block;
+		vertical-align:top;
+		border-radius:50%;
+		margin:auto;
+	}
+	.AandC ul {
+		text-align:left;
+		padding:0px;
+
+	}
+	.AandC li {
+		list-style:none;
+		text-align:left;
+		margin-left:0;
+	}
+	.dp_intro img,p {
+		display: inline-block;
+		vertical-align:top;
+
+	}
+	.dp_intro p {
+		display: inline-block;
+		margin-left:5%;
+	}
+	.contact {
+
+	}
+	.inputDiv {
+		border:1px solid black;
+	}
+	.contact input {
+		padding:10px;
+		margin-top:10px;
+		width:20%;
+	}
+	.contact input[name='msg'] {
+		padding-bottom: 50px;
+	}
+	.contact button {
+		padding:10px;
+		border-radius:10px;
+	}
