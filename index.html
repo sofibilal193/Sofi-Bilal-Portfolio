@@ -1,173 +1,178 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Portfolio</title>
+	<title>Sofi Bilal-Portfolio</title>
+	<meta charset="utf-8">
+  	<meta name="description" content="Portfolia">
+  	<meta name="keywords" content="BilalAhmad Sofi, Sofi Bilal, Hidden Warrior, Sofi Bilal-Portfolio, Freedoom, Mudasir,JSSATE">
+  	<meta name="Developer" content="Sofi Bilal">
+  	<meta name="application-name" content="Sofi Bilal Portfolio">
+  	<meta name="robots" content="index, nofollow">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://kit.fontawesome.com/04847cf7d3.js" crossorigin="anonymous"></script>
 	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+	<script type="text/javascript" src="script.js"></script>
 </head>
-<body onload="upDown()">
-<div class="container">
+<body >
+<div class="container" style="margin:auto;">
 	<div class="top_bar">
 		<div class="t_left">
 			<img src="images/logo.jpg" height="50" width="50">
 			<h3>BILAL AHMAD SOFI</h3>
 		</div>
 		<div class="t_right">
-			<i class="fa fa-facebook"></i>
-			<i class="fa fa-instagram"></i>
-			<i class="fa fa-twitter"></i>
-			<i class="fa fa-linkedin"></i>
-			<i class="fa fa-github"></i>
-			<i class="fa fa-apple"></i>
-			<br>
-			<a href="#" onclick="window.open('NoidaResume.pdf');">See My CV <i class="far fa-book"></i></a>
+			<div class="inside_t_right">
+				<div class="icons">
+			<a href="facebook.com/sofibilal193" style="color:blue;"><i class="fa fa-facebook"></i></a>
+			<a href="instagram/sofi_bilal___" style="color:darkred;"><i class="fa fa-instagram"></i></a>
+			<a href="twitter.com/sofibilal193" style="color:blue;"><i class="fa fa-twitter"></i></a>
+			<a href="linkedin.com/sofibilal193" style="color:darkblue;"><i class="fa fa-linkedin"></i></a>
+			<a href="github.com/sofibilal193" style="color:black;"><i class="fa fa-github"></i></a>
+			<a href=""><i class="fa fa-apple" style="color:blue;"></i></a>
+			</div>
+			<div class="seeMyCvDiv">
+			<button href="#" onclick="window.open('NoidaResume.pdf');" class="seeMyCv">See My CV &nbsp;&nbsp;<span class="fa fa-file-pdf"></span></button>
+			</div>
+			</div>
 		</div>
 	</div>
-	<br>
+	
 	<div class="intro">
-		<div class="in_left">
-			<i class="fas fa-brackets"></i>
-			<p> I am </p>
+		<div class="in_left"><br><br><br>
+			<div class="im_all">
+			<p class="brF">{ &nbsp </p>
+			<p class="im"> I am &nbsp</p>
 			<ul>
-				<li class="names">Web Developer</li>
-				<li class="names">Programmer</li>
-				<li class="names">Looser</li>
-				<li class="names">Sakht Launda</li>
-				<li class="names">Debugger</li>
+				<li class="other_names" id="name" style="color:orange;"> BILAL AHMAD SOFI</li>
+				<li class="other_names">Web Developer</li>
+				<li class="other_names">Programmer</li>
+				<li class="other_names">Looser</li>
+				<li class="other_names">Social Activist</li>
+				<li class="other_names">Debugger</li>
 			</ul>
+			<p class="brL"> }</p>
+			</div>
 			<br>
 			<p>
-				Hello, I am Bilal Ahmad Sofi, a researcher with two publications, an artificial intelligence and data science enthusiast, a full stack developer and, a graphics designer.
+				Hello, I am Bilal Ahmad Sofi, Full Stack Developer and Data Science Enthusiast.
 			</p>
-			<script type="text/javascript">
-				var i =0;
-				var x = document.getElementsByClassName("names");
-
-				function upDown() {
-
-					if(i == x.length) {
-						i = 0;
-					}
-					for(j=0;j<x.length;j++) {
-						x[j].style.display = "none";
-					}
-					x[i].style.display = "block";
-					i+=1;
-					setTimeout(upDown, 2000);
-				}
-			</script>
 		</div>
 		<div class="in_right">
-			<img src="images/logo.jpg" width="300" height="300">
+			<img src="escr.gif" width="300" height="300">
 		</div>
 	</div>
-	<br>
+	
 	<div class="seeMyWork">
-		<button>See My Work <i class="fa fa-eye"></i></button>
+		<button >See My Work <i class="fa fa-eye"></i></button>
 	</div>
 	<br>
 
 	<div class="work">
-		<div class="w_head"><h1>Work</h1></div>
-		<div class="w_sub_Head"><h3>Publications</h3> </div>
-		<div class="W_room">
-			<div class="w_box">
+		<div class="publication">
+		<div class="pub_head"><h1 class="heading" >Work</h1></div>
+		<div class="pub_sub_Head"><h2>PUBLICATIONS</h2> </div>
+		<div class="pub_room">
+			<div class="pub_box">
 				<p><b>Personalized Drug Concentrations With Machine Learning: An Exploratory Study</b></p>
 				<p>International Journal of Basic and Clinical Pharmacology</p>
-				<p>Published: <i>December, 2019</i></p>
-				<button>Read Full Text <i class="fa fa-book"></i></button><br>
+				<p>Published: <i>December, 2019</i></p><br>
+				<button>Read Full Text <i class="fa fa-book"></i></button><br><br>
 			</div>
-			<div class="w_box">
+			<div class="pub_box">
 				<p><b>Personalized Drug Concentrations With Machine Learning: An Exploratory Study</b></p>
 				<p>International Journal of Basic and Clinical Pharmacology</p>
-				<p>Published: <i>December, 2019</i></p>
-				<button>Read Full Text <i class="fa fa-book"></i></button><br>
+				<p>Published: <i>December, 2019</i></p><br>
+				<button>Read Full Text <i class="fa fa-book"></i></button><br><br>
 			</div>
 		</div>
-	</div>
+		</div>
+	
 	<br>
 	<div class="project">
-		<div class="p_head"><h1>Projects</h1></div>
-		<div class="p_room">
-			<div class="p_box">
+		<div class="proj_head"><h2>PROJECTS</h2></div>
+		<div class="proj_room">
+			<div class="proj_box">
 				<img src="images/logo.jpg">
 				<p><b>Litmus AI Web</b></p>
 				<p>Fake news detection using text features with Machine Learning. Technologies used-Python, SKLearn, Tensorflow, Keras, NLP, Heroku, HTML, CSS, JS, Flask.</p>
-				<p>Published: <i>December, 2019</i></p>
-				<button>View Project <i class="fa fa-eye"></i></button><br>
+				<p>Published: <i>December, 2019</i></p><br>
+				<button>View Project <i class="fa fa-eye"></i></button><br><br>
 			</div>
-			<div class="p_box">
+			<div class="proj_box">
 				<img src="images/logo.jpg">
 				<p><b>Litmus AI Web</b></p>
 				<p>Fake news detection using text features with Machine Learning. Technologies used-Python, SKLearn, Tensorflow, Keras, NLP, Heroku, HTML, CSS, JS, Flask.</p>
-				<p>Published: <i>December, 2019</i></p>
-				<button>View Project <i class="fa fa-eye"></i></button><br>
+				<p>Published: <i>December, 2019</i></p><br>
+				<button>View Project <i class="fa fa-eye"></i></button><br><br>
 			</div>
 		</div>
 	</div>
 	<div class="skills">
-		<div><h1>SKILLS</h1></div>
+		<div><h1 class="heading">SKILLS</h1></div>
 		<div><h2>INDUSTRIAL KNOWLEDGE</h2></div>
-		<div class="sk_box">
+		<div class="ik_box">
 			<div style="background-color:white;">
 				<i class="iconify" data-icon="fa-solid:layer-group" data-inline="false"></i>
 			</div>
 			<div style="background-color:black;color:white;">
-				<b style="font-size:20px;">Full Stack Development</b>
+				<b style="font-size:18px;">Full Stack Development</b>
 			</div>
 		</div>
-		<div class="sk_box">
+		<div class="ik_box">
 			<div style="background-color:white;">
 				<i class="iconify" data-icon="fa-solid:file-alt" data-inline="false"></i>
 			</div>
 			<div style="background-color:black;color:white;">
-				<b style="font-size:20px;">Research and Content Writing</b>
+				<b style="font-size:18px;">Research and Content Writing</b>
 			</div>
 		</div>
-		<div class="sk_box">
+		<div class="ik_box">
 			<div style="background-color:white;">
 				<i class="iconify" data-icon="fa-solid:chess-pawn" data-inline="false"></i>
 			</div>
 			<div style="background-color:black;color:white;">
-				<b style="font-size:20px;">Creative Strategy</b>
+				<b style="font-size:18px;">Creative Strategy</b>
 			</div>
 		</div>
-		<div class="sk_box">
+		<div class="ik_box">
 			<div style="background-color:white;">
 				<i class="iconify" data-icon="fa-solid:pencil-ruler" data-inline="false"></i>
 			</div>
 			<div style="background-color:black;color:white;">
-				<b style="font-size:20px;">Data Science</b>
+				<b style="font-size:18px;">Data Science</b>
 			</div>
 		</div>
 	</div>
 	<br>
 	<div class="TaT">
-		<div class="TaT_head"><h1>TOOLS AND TECHNOLOGIES</h1></div>
+		<div class="TaT_head"><h2>TOOLS AND TECHNOLOGIES</h2></div>
 		<div class="TaT_room" style="width:100%;">
 			<div class="ttBox">
+				<p>C</p>
+				<p>C++</p>
 				<p>Python</p>
-				<p>Python</p>
-				<p>Python</p>
+				<p>Django</p>
 			</div>
 			<div class="ttBox">
-				<p>Python</p>
-				<p>Python</p>
-				<p>Python</p>
+				<p>JavaScript</p>
+				<p>JQuery</p>
+				<p>SQL Databases</p>
+				
 			</div>
 			<div class="ttBox">
-				<p>Python</p>
-				<p>Python</p>
-				<p>Python</p>
+				<p>HTML</p>
+				<p>CSS</p>
+				
 			</div>
 		</div>
 	</div>
 	<br>
 	<div class="AandC">
 		<div class="AnC_head">
-			<h1>AWARDS AND CERTIFICATIONS</h1>
+			<h1 class="heading">AWARDS AND CERTIFICATIONS</h1>
 		</div>
 		<div class="And-room">
 			<ul>
@@ -177,9 +182,10 @@
 			</ul> 
 		</div>
 	</div>
+	</div>
 	<br>
 	<div class="abtMe">
-		<div><h1>ABOUT ME</h1></div>
+		<div><h1 class="heading">ABOUT ME</h1></div>
 		<div class="dp_intro">
 			<img src="images/logo.jpg" style="border-radius:50%;" width="180" height="180">
 			<p style="width:50%;">I am a 19-year old, from Budgam J&K, India, based in Chandigarh India. I am passionate about technology, particularly - Artificial Intelligence. I have been exploring, learning, and working with different technologies for around five years now. I have seven research publications, and I wish to pursue a higher degree in Data Science and AI. I am a huge football fan, and I love reading whatever I find. I also write poetry in English, and Kashmiri.
@@ -187,36 +193,58 @@
 		</div>
 		<div class="info">
 			<ul>
-				<li><i class="fa fa-birthday-cake" aria-hidden="true"></i> Born On 4th Sep, 2000</li>
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i>From Rakhshalna Pampore, Jammu and Kashmir</li>
-				<li><i class="fa fa-flag" aria-hidden="true"></i> Live in Delhi, India</li>
-				<li><i class="fas fa-book-reader"></i>Education: 
+				<li><i class="fa fa-birthday-cake" aria-hidden="true"></i> Born On 4th Sep, 2000</li><br>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i> From Rakhshalna Pampore, Jammu and Kashmir</li><br>
+				<li><i class="fa fa-flag" aria-hidden="true"></i> Live in Delhi, India</li><br>
+				<li><i class="fas fa-book-reader"></i> Education: 
 					<ul>
 						<li>Bachelor of Computer Science and Engineeing, JSS Academy of Technical Education, Noida (2017-2021)</li>
 					</ul>
-				</li>
-				<li><i class="fas fa-briefcase" aria-hidden="true"></i>Experience:
+				</li><br>
+				<li><i class="fas fa-briefcase" aria-hidden="true"></i> Experience:
 					<ul>
-						<li>Subject Matter Expert, CHEGG INDIA Pvt. Ltd (Jan-2020 - Present)</li>
-						<li>Incharge and Web Developer, MUSHKIL KUSHA TRUS &#174;1989 (july-2020 - Present)</li>
+						<li>Subject Matter Expert,<b> CHEGG INDIA Pvt. Ltd.</b> (Jan-2020 - Present)</li>
+						<li>Incharge, Web Developer and Social Media Manager, <b>MUSHKIL KUSHA TRUS<sup>&#174;1989</sup></b> (july-2020 - Present)</li>
 					</ul>
-				</li>
+				</li><br>
 			</ul>
 		</div>
 	</div>
 	<br>
 	<div class="contact">
-		<div><h1>GET IN TOUCH</h1></div>
+		<div><h1 class="heading">GET IN TOUCH</h1></div>
 		<div class="inputDiv">
 			<form>
-				<input type="text" name="" placeholder="NAME"><br>
-				<input type="text" name="" placeholder="EMAIL"><br>
-				<input type="text" name="msg"  placeholder="MESSAGE"><br><br>
-				<button>SEND</button>
+				<label id="nLabel">Name</label><br>
+				<input type="text" id="nId" name="name" placeholder="NAME" onfocus="getInTouch(this)" onfocusout="myFunction(this)">
+				<br>
+				<label id="eLabel">Email</label><br>
+				<input type="text" id="eId" name="email" placeholder="EMAIL" onfocus="getInTouch(this)" onfocusout="myFunction(this)">
+				<br>
+				<label id="mLabel">Message</label><br>
+				<input type="text" id="mId" name="msg"  placeholder="MESSAGE" onfocus="getInTouch(this)" onfocusout="myFunction(this)"><br><br>
+
+				<button onclick="getInTouch(this)" name="sendBtn">SEND</button>
 			</form>
+			<br><br>
 		</div>
 	</div>
+	<div class="footer">
+		<div class="footer_left">
+			<p>Hire Me: <span onclick="copyEmail(this)"> sofibilal193@gmail.com</span></p>
+		</div>
+		<div class="footer_center">
+			<img src="hw.gif">
+		</div>
+		<div class="footer_right">
+			<p>Thank You for Visiting</p>
+		</div>
+	</div>
+	<div id="menuBtn" onclick="toggleMenu(this)">
+		<div class="barOne"></div>
+		<div class="barTwo"></div>
+		<div class="barThree"></div>
+	</div>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
