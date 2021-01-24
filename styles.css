@@ -1,53 +1,63 @@
 /*Top Bar*/
 		* {
 			font-family: Arial;
+			padding:0px;
+			margin:0px;
 		}
 		body {
 			background-color:silver;
 		}
 		.container {
-			width:95%;
+			width:96vw;
 			margin:auto;
 			position:relative;
+			padding-left:1vw;
 		}
 		.top_bar {
+			margin-top:1vh;
 			width:100%;
 			display:block;
 			height:100px;
-			margin-bottom:5vh;
+			margin-bottom:12%;
 		}
 		.t_right {
 			float:right;
-			width:48%;
+			width:45vw;
 			text-align:right;
-			margin-right:20px;
+			margin-right:;
+			display:inline-block;
 		}
 		.t_left {
 			float:left;
 			font-weight:bold;
 			font-size:40px;
-			width:40%;
+			width:45vw;
+			display:inline-block;
 		}
 		.t_left img {
 			display:inline-block;
-			margin-top:15px;
+			width:5vw;
+			height:5vw;
+			vertical-align:top;
 		}
 		.t_left h3 {
 			display:inline-block;
 			font-weight:bold;
-			font-size:30px;
+			font-size:3vw;
 			vertical-align:top;
 			margin-left:5px;
+			margin-top:2%;
 		}
-		.t_right {
-			
+		.t_right .icons a {
+			margin-right:1vw;
+			font-size:4vw;
+
 		}
 		.inside_t_right {
 			text-align:left;
-			
-			width:60%;
-			flex:right;
+			width:100%;
 			display:inline-block;
+			vertical-align:top;
 		}
 		.icons, .seeMyCvDiv {
 			width:100%;
@@ -58,149 +68,259 @@
 			text-align:left;
 
 		}
+		.seeMyCvDiv span {
+			color:black;
+		}
 		.t_right i {
-			font-size:30px;
 			cursor:pointer;
 		}
 
 		.t_right .seeMyCv {
 			text-decoration:none;
 			background-color:darkorange;
-			padding:10px;
-			width:50%;
-			font-size:80%;
-			color:white;		}
+			padding:1vh 1vw 1vh 0 ;
+			font-size:2vw;
+			color:white;		
+			vertical-align:bottom;
+			float:left;
+		}
 		.t_right button span {
 			vertical-align:top;
-			font-size:1.2em;
+			font-size:1em;
 		}
+		/*Mixed.................*/
 		.heading {
-			font-size:40px;
+			font-size:4.5vw;
+			color:black;
 		}
-/*Introduction*/
+		.subheads {
+		font-size:2vw;
+		color:darkslategrey;
+		width:100%;
+	}
+/*Introduction and gif*/
 	.intro {
 		width:100%;
 	}
 	.in_left {
-		width:48%;
+		width:56%;
 		display:inline-block;
 		vertical-align:top;
+		margin:0;
+		padding:0px;
 
 	}
 	.work, .intro, .abtMe, .contact {
 		
-		padding-left: 5px;
-	}
-	hr {
-		color:orange;
+		
 	}
 
 	.in_left p {
 		display:inline-block;
+
 	}
-	/*........*/
+	/*......im..*/
 	.im {
 		font-weight:bold;
-		font-size:2.5em;
-		margin-top:0.5em;
-		margin-left: 10px;
+		font-size:3vw;
 		display:inline-block;
-		padding:0px;
+		vertical-align:top;
+		margin-top:0px;
 	}
 	#name {
-		color:orange;
-		padding:0px;
+		color:darkorange;
 	}
-	.other_names {
-	
-	font-size:2.5em;
-  	font-weight:bold;
-  	vertical-align:top;
-  	margin-top:.3em;
-	}
-	.im_all {
+	.im_all, .in_details {
+		vertical-align:top;
 	}
 	.brF, .brL {
 		color:darkorange;
 		font-weight:bold;
-		font-size:4em;
+		font-size:3vw;
 		display:inline-block;
 		vertical-align:top;
-		margin-top:0;
+		margin-top:0px;
 	}
 	.brF {
 		float:left;
 	}
 	.brL {
 		float:right;
-		margin-right:10vh;
+		margin-right:5%;
 	}
 
 	.in_left ul{
 		display:inline-block;
-		width:50%;
-		
+		width:60%;
 		vertical-align:top;
-		margin-top:14px;
+		margin-top:0px;
 		padding:0px;
+		text-align:left;
+		vertical-align:top;
 	}
 	.in_left ul li {
 		list-style:none;
 		text-align:left;
-		font-size:35px;
+		font-size:3vw;
   		font-weight:bold;
   		vertical-align:top;
   		display:none;
+  		width:100%;
 	} 
+	.in_left .in_details p {
+		font-size:2.1vw;
+	}
 
 	.in_right {
-		width:48%;
+		width:40%;
 		display:inline-block;
 	}
-	.seeMyWork {
-		text-align:center;
-		margin-top:15vh;
+	.in_right img {
+		width:20vw;
+		height:20vw;
 	}
-	.seeMyWork button {
-		font-size: 35px;
-		background-color:orange;
-	}
+
 	.work {
-		margin-top:12vh;
+		margin-top:5vh;
+	}
+	/*Publication*/
+	.publication {
+		pointer-events: none;
+		opacity: 0.5;
+  		background: #CCC;
+	}
+	.pub_room {
 	}
 	.pub_box {
-		width:24%;
+		text-align:left;
+		width:30vw;
+		font-size:2.3vw;
+		height:auto;
 		display:inline-block;
-		text-align:center;
 		background-color:aliceblue;
 		padding-left:10px;
 		margin-right:15px;
 	}
+	.pub_head, .pub_on, .pub_date, .pub_btn {
+		width:100%;
+	}
+	.pub_head {
+		font-size:0.8em;
+	}
+	.pub_on {
+		font-size:0.9em;
+	}
+	.pub_date {
+		font-size:0.8em;
+	}
+	.pub_btn button {
+		background-color:darkorange;
+		padding:1vh 1vw 1vh 0 ;
+		font-size:1.5vw;
+		color:white;		
+		vertical-align:bottom;
+		float:left;
+		border-radius:5px;
+		}
+		/*Projects*/
+
 	.proj_box {
-		width:24%;
+		text-align:left;
+		width:28%;
+		font-size:2vw;
+		height:42vw;
 		display:inline-block;
-		text-align:center;
 		background-color:aliceblue;
 		padding-left:10px;
-		margin-right:15px;
+		margin-right:5px;
+		vertical-align:top;
+		position:relative;
+		transition: 0.2s;
+	}
+	.proj_box:hover { 
+		box-shadow:5px 5px 5px grey;
+		opacity:0.9;
+	 }
+	.proj_icon {
+		width:100%;
+		text-align:center;
 	}
 	.proj_box img {
 		width:50px;
 		height:50px;
+		border-radius: 50%;
 	}
-	.iconify {
-		font-size:50px;
+	.proj_head {
+		width:100%;
+		font-size:0.9em;
+	}
+	.proj_intro {
+		width:100%;
+		font-size:0.9em;
+	}
+	.proj_date {
+		width:100%;
+		font-size:0.8em;
+		vertical-align:bottom;
+	}
+	.proj_btn {
+		width:100%;
+		vertical-align:bottom;
+		position:absolute;
+		bottom:5px;
+	}
+	.proj_btn button {
+		background-color:darkorange;
+		padding:1vh 1vw 1vh 0 ;
+		font-size:1.5vw;
+		color:white;		
+		vertical-align:bottom;
+		float:left;
+		border-radius:5px;
+		border:none;
+		}
+		.proj_btn button:hover {
+			opacity:0.9;
+			cursor:pointer;
+			border:1px solid darkorange;
+		}
+	/*Skills*/
+	.skills {
+	}
+	.ik_room {
+
 	}
 	.ik_box {
 	text-align:center;
-	width:10%;
-	height:20vh;
+	width:24%;
+	height:20vw;
 	display:inline-block;
 	vertical-align:top;
+	
 	}
-	.ik_box div {
+	.ik_box div:nth-child(1) {
 		height:50%;
+		font-size:3vw;
+		background-color:ghostwhite;
+		position:relative;
 	}
+	.iconify {
+		font-size:5vw;
+		margin-top:10%;
+	}
+
+	.ik_box div:nth-child(2) {
+		height:50%;
+		font-size:3vw;
+		background-color:black;
+		color:white;
+	}
+	.ik_name {
+		font-size:1.56vw;
+		margin-top:%;
+	}
+	
+	/*Tools and Technologies*/
 	.ttBox {
 		width:30%;
 		display:inline-block;
@@ -212,34 +332,62 @@
 		width:100%;
 		text-align:left;
 	}
+	/*Awards and certification*/
 	.AandC ul {
 		text-align:left;
 		padding:0px;
-
 	}
 	.AandC li {
 		list-style:none;
 		text-align:left;
 		margin-left:0;
 	}
-	.dp_intro img,p {
-		display: inline-block;
+	/*About Me*/
+	.abtMe {
+	}
+	.abt_dp_and_introDuc {
+		width:100%;
+		text-align:center;
+	}
+	.abt_dp_and_introDuc .dp {
+		display:inline-block;
+		width:26vw;
+		margin-right:1vw;
+	}
+	.abt_dp_and_introDuc .dp img {
+		border-radius:50%;
+		width:70%;
+		height:70%;
+
+	}
+	.abt_dp_and_introDuc .introDuc {
+		display:inline-block;
 		vertical-align:top;
+		width:70%;
+		margin-top:2vh;
+	}
+	.abt_dp_and_introDuc .introDuc p {
+		width:100%;
+		padding:0;
+		margin:0;
+		font-size:;
+		text-align:left;
+	}
+
+	.info {
+		width:100%;
 
 	}
-	.dp_intro p {
-		display: inline-block;
-		margin-left:5%;
-	}
+	
 	.contact {
-
+		width:100vw;
 	}
 	.inputDiv {
 	}
 	.contact input {
 		padding:10px;
-		margin-bottom:10px;
-		width:30%;
+		margin-bottom:1vh;
+		width:55vw;
 		border:none;
 		margin-top:0px;
 	}
@@ -298,30 +446,29 @@
 /*Menu Button and Function*/
 #menuBtn {
 	background-color:white;
-	width:5vh;
-	height:5vh;
+	width:4vh;
+	height:4vh;
 	position:fixed;
-	right:10vh;
-	bottom:4vh;
+	right:4vw;
+	bottom:5vw;
 	padding:1vh;
 	border-radius:50%;
-	padding:flex;
 }
 .barOne, .barTwo, .barThree {
 	background-color:black;
 	width:90%;
 	height:15%;
 	margin:13% auto 10% auto;
-	transition: 0.4s;
+	transition: 0.1s;
 	
 }
 .change .barOne {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
 }
 
 .change .barTwo {opacity: 0;}
 
 .change .barThree {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
+  -webkit-transform: rotate(45deg) translate(-5px, -5px);
+  transform: rotate(45deg) translate(-5px, -5px);
