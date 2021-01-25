@@ -64,15 +64,24 @@ Top Bar*/
 			display:inline-block;
 		}
 		.t_right a {
-			text-align:left;
-
+			text-align:center;
 		}
-		.seeMyCvDiv span {
-			color:black;
+		.t_right .seeMyCvDiv button {
+			background-color: darkorange;
+ 			color:black;
+ 			font-size: 8px;
+ 			padding: 5px 5px;
+ 			border: none;
+ 			cursor: pointer;
+			border-radius: 5px;
+ 			text-align: center;
+ 			font-weight:bold;
 		}
-		.t_right i {
-			cursor:pointer;
+		.t_right .seeMyCvDiv button:hover {
+			background-color: black;
+  			color: white;
 		}
+		
 
 		.t_right .seeMyCv {
 			text-decoration:none;
@@ -82,10 +91,6 @@ Top Bar*/
 			color:white;		
 			vertical-align:bottom;
 			float:left;
-		}
-		.t_right button span {
-			vertical-align:top;
-			font-size:1em;
 		}
 		/*Mixed.................*/
 		.heading {
