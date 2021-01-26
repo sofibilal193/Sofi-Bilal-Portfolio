@@ -1,5 +1,5 @@
-/* @media only screen and (max-width: 480px) {
-Top Bar*/
+/* @media only screen and (max-width: 480px) { 
+/*Top Bar*/
 		* {
 			font-family: Arial;
 			
@@ -8,10 +8,9 @@ Top Bar*/
 			background-color:ghostwhite;
 		}
 		.container {
-			width:98vw;
+			width:100vw;
 			margin:auto;
 			position:relative;
-			padding-left:1vw;
 		}
 		.top_bar {
 			margin-top:1vh;
@@ -21,31 +20,34 @@ Top Bar*/
 		}
 		.t_right {
 			float:right;
-			width:45vw;
 			text-align:right;
-			margin-right:;
 			display:inline-block;
+			height:100%;
 		}
 		.t_left {
 			float:left;
 			font-weight:bold;
 			font-size:40px;
-			width:45vw;
+			height:100%;
 			display:inline-block;
 		}
 		.t_left img {
 			display:inline-block;
-			width:5vw;
-			height:5vw;
+			width:9vw;
+			height:9vw;
 			vertical-align:top;
+			margin-top:;
+			border:none;
+			padding:2px;
+			box-shadow: -10px -10px -10px grey;
 		}
 		.t_left h3 {
 			display:inline-block;
 			font-weight:bold;
-			font-size:3.7vw;
+			font-size:4vw;
 			vertical-align:top;
-			margin-left:5px;
-			margin-top:2%;
+			margin-left:0;
+			margin-top:2.5vw;
 		}
 		.t_right .icons a {
 			margin-right:0.4vw;
@@ -107,7 +109,7 @@ Top Bar*/
 		width:100%;
 	}
 	.in_left {
-		width:56%;
+		width:60%;
 		display:inline-block;
 		vertical-align:top;
 		margin:0;
@@ -126,60 +128,67 @@ Top Bar*/
 	/*......im..*/
 	.im {
 		font-weight:bold;
-		font-size:3vw;
+		font-size:4vw;
 		display:inline-block;
 		vertical-align:top;
 		margin-top:0px;
+		float:left;
+	}
+	.im_all {
+		height:auto;
+		margin-top:5px;
 	}
 	.im_all, .in_details {
 		vertical-align:top;
-		margin-top:0.2vw;
 	}
 	.brF, .brL {
 		color:darkorange;
 		font-weight:bold;
-		font-size:3vw;
+		font-size:4vw;
 		display:inline-block;
 		vertical-align:top;
 		margin-top:0px;
+		margin-bottom:0;
 	}
 	.brF {
 		float:left;
 	}
 	.brL {
 		float:right;
-		margin-right:5%;
+		margin-right:;
 	}
 
 	.in_left ul{
 		display:inline-block;
-		width:60%;
 		vertical-align:top;
 		margin-top:0px;
+		margin-bottom:0px;
 		padding:0px;
 		text-align:left;
-		vertical-align:top;
 	}
 	.in_left ul li {
 		list-style:none;
 		text-align:left;
-		font-size:3vw;
+		font-size:4vw;
   		font-weight:bold;
   		vertical-align:top;
   		display:none;
   		width:100%;
 	} 
 	.in_left .in_details p {
-		font-size:2.1vw;
+		font-size:2.8vw;
+		padding-top:0;
+		margin-top:0;
+		font-family:arial;
 	}
 
 	.in_right {
-		width:40vw;
+		width:37%;
 		display:inline-block;
 	}
 	.in_right img {
-		width:20vw;
-		height:20vw;
+		width:25vw;
+		height:25vw;
 		display:inline-block;
 	}
 
@@ -421,19 +430,26 @@ Top Bar*/
 	
 	.contact {
 		width:100vw;
-		background-color:aliceblue;
 	}
-	.inputDiv {
+	.contact form {
+	background-color:aliceblue;
 	}
-	.contact input {
+	.inputDiv label {
+		margin-bottom:0px;
+		padding:0;
+		width:100%;
+		display:none;
+	}
+	.contact input[type='text'] {
 		padding:5px;
-		margin-bottom:1vh;
+		margin-bottom:40px;
 		width:70vw;
 		border:none;
 		margin-top:0px;
-
+		border:1px solid grey;
+		height:20px;
 	}
-	.contact input:hover {
+	.contact input[type='text']:hover {
 		border-bottom:2px solid orange;
 	}
 	.contact input:focus {
@@ -443,12 +459,23 @@ Top Bar*/
 	.contact input[name='msg'] {
 		padding-bottom: 30px;
 	}
-	.contact button {
-		border-radius:10px;
+	.contact input[type='button'] {
+		background-color:darkorange;
+ 		color:black;
+ 		font-size: 18px;
+ 		padding:6px 6px;
+ 		border:none;
+ 		cursor:pointer;
+		border-radius: 5px;
+ 		text-align: center;
+ 		margin-left:2px;
+
 	}
-	.inputDiv label {
-		display:none;
+	.contact input[type='button']:hover {
+		color:white;
+		background-color:black;
 	}
+		
 	.abtMe li {
 		list-style:none;
 	}
@@ -459,62 +486,24 @@ Top Bar*/
 	.footer {
 		width:100%;
 		background-color:black;
-		height:100px;
+		text-align:center;
 	}
 	.footer_left {
-		width:31%;
+		width:100%;
 		vertical-align:top;
 		color:white;
 		display:inline-block;
 		text-align:center;
 	}
 	.footer_center {
-		width:31%;
+		width:100%;
 		display:inline-block;
 		height:100%;
 	}
-	.footer_center img {
+	.footer_center p {
 		width:100%;
 		height:100%;
 	}
-	.footer_right {
-		width:31%;
-		color:white;
-		display:inline-block;
-		vertical-align:top;
-		text-align:center;
-	}
-/*Menu Button and Function*/
-#menuBtn {
-	background-color:white;
-	width:4vh;
-	height:4vh;
-	position:fixed;
-	right:4vw;
-	bottom:5vw;
-	padding:1vh;
-	border-radius:50%;
-}
-.barOne, .barTwo, .barThree {
-	background-color:black;
-	width:90%;
-	height:15%;
-	margin:13% auto 10% auto;
-	transition: 0.1s;
-	
-}
-.change .barOne {
-  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-  transform: rotate(-45deg) translate(-6px, 6px);
-}
-
-.change .barTwo {opacity: 0;}
-
-.change .barThree {
-  -webkit-transform: rotate(45deg) translate(-5px, -5px);
-  transform: rotate(45deg) translate(-5px, -5px);
-}
-
 .footer_center {
 	color:white;
 	text-align:center;
@@ -529,10 +518,110 @@ Top Bar*/
 .footer_center p:nth-child(2) {
 	background-color:white;
 	color:black;
-	width:80%;
+	width:20%;
 	margin:auto;
 	padding:5px;
-	font-size:12px;
+	font-size:15px;
 	font-weight:bold;
 	font-style: oblique;
 }
+.footer_right {
+	margin-top:10px;
+		width:100%;
+		color:white;
+		display:inline-block;
+		vertical-align:top;
+		text-align:center;
+	}
+	.footer_right span {
+		font-size:0.8em;
+		padding:2px;
+		color:red;
+		font-weight:bold;
+	}
+/*Menu Button and Function*/
+#menuBtn {
+	background-color:white;
+	width:4vh;
+	height:4vh;
+	position:fixed;
+	right:4vw;
+	bottom:5vw;
+	padding:1vh;
+	border-radius:50%;
+	z-index:2;
+}
+.barOne, .barTwo, .barThree {
+	background-color:black;
+	width:90%;
+	height:15%;
+	margin:13% auto 10% auto;
+	transition: 0.1s;
+}
+.change .barOne {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.change .barTwo {opacity: 0;}
+
+.change .barThree {
+  -webkit-transform: rotate(45deg) translate(-5px, -5px);
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+/*Menu Div*/
+ #menuDiv {
+ 	position:fixed;
+ 	right:0;
+ 	z-index:1;
+ 	bottom:0;
+ 	background-color:orange;
+ 	width:0vw;
+ 	height:100vh;
+ 	border-radius:;
+	transition:0.5s;
+}
+.menuSubDiv {
+text-align:center;
+margin-top:5vh;
+width:100vw;
+}
+.menuSubDiv button {
+	margin:4vh 4vh;
+	font-weight:bold;
+	background-color:transparent;
+	border:2px solid black;
+	color:white;
+}
+.menuSubDiv button:hover {
+	background-color:silver;
+	color:black;
+	transition:0.1s;
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -41,10 +41,10 @@
 	</div>
 	
 	<div class="intro">
-		<div class="in_left">
+		<div class="in_left"><br>
 			<div class="im_all">
-			<p class="brF">{ &nbsp </p>
-			<p class="im"> I am &nbsp</p>
+			<p class="brF">{&nbsp</p>
+			<p class="im">I am&nbsp</p>
 			<ul>
 				<li class="other_names" id="name" style="color:darkred;"> BILAL AHMAD SOFI</li>
 				<li class="other_names">a Researcher</li>
@@ -58,14 +58,14 @@
 			<p class="brL"> }</p>
 			</div>
 			<div class="in_details">
-			<p><i>
+			<p>
 				Hello, I am Bilal Ahmad Sofi, Artificial Intelligence and Data Science Enthusiast and a Full Stack Developer.
-				</i>
+				
 			</p>
 			</div>
 		</div>
 		<div class="in_right">
-			<img src="escr.gif">
+			<img src="logo.gif">
 		</div>
 	</div>
 
@@ -207,7 +207,7 @@
 		<div class="abt_dp_and_introDuc">
 			<div class="dp"><br><img src="images/logo.jpg"></div>
 			<div class="introDuc">
-				<p>I am a 20-year old, from Rakhshalina Budgam J&K, living in Noida Delhi/NCR India. I am passionate about technology, particularly - Artificial Intelligence. I have been exploring, learning, and working with different technologies for around four years now. I wish to pursue a higher degree in Data Science and AI. I am solving problems related Programming, Data Structure, Algorithm and Database and I love reading books especially Novels.<br>
+				<p>I am a 20-year old, from Rakhshalina Pampore J&K, living in Noida Delhi/NCR India. I am passionate about technology, particularly - Artificial Intelligence. I have been exploring, learning, and working with different technologies for around four years now. I wish to pursue a higher degree in Data Science and AI. I am solving problems related Programming, Data Structure, Algorithm and Database and I love reading books especially Novels.<br>
 				<b>If you wish to contact me, or hire me, you may use the form below, or drop me a mail.</b></p>
 			</div>
 		</div><br>
@@ -218,13 +218,13 @@
 				<li class="infoLine"><i class="fa fa-flag" aria-hidden="true"></i> Live in Delhi, India</li><br>
 				<li class="infoLine"><i class="fas fa-book-reader"></i> Education: 
 					<ul>
-						<li>Bachelor of Computer Science and Engineeing, JSS Academy of Technical Education, Noida (2017-2021)</li>
+						<li>Bachelor of Computer Science and Engineeing, JSS Academy of Technical Education, Noida (2017-2021)</li><br>
 					</ul>
 				</li><br>
 				<li class="infoLine"><i class="fas fa-briefcase" aria-hidden="true"></i> Experience:
 					<ul>
-						<li>Subject Matter Expert,<b> CHEGG INDIA Pvt. Ltd.</b> (Jan-2020 - Present)</li>
-						<li>Incharge, Web Developer and Social Media Manager, <b>MUSHKIL KUSHA TRUST<sup>&#174;1989</sup></b> (july-2020 - Present)</li>
+						<li>Subject Matter Expert,<b> CHEGG INDIA Pvt. Ltd.</b> (Jan-2020 - Present)</li><br>
+						<li>Incharge and Social Media Manager, <b>MUSHKIL KUSHA TRUST<sup>&#174;1989</sup></b> (july-2020 - Present)</li><br>
 					</ul>
 				</li><br>
 			</ul>
@@ -234,37 +234,47 @@
 	<div class="contact">
 		<div><h1 class="heading">GET IN TOUCH</h1></div>
 		<div class="inputDiv">
-			<form>
-				<label id="nLabel">Name</label><br>
-				<input type="text" id="nId" name="name" placeholder="NAME" onfocus="getInTouch(this)" onfocusout="myFunction(this)">
+			<form method="get">
+				<label id="nLabel">Name</label>
+				<input type="text" id="nId" name="name" placeholder="NAME" onfocus="getInTouch(this)" onfocusout="focusOutEffects(this)">
 				<br>
-				<label id="eLabel">Email</label><br>
-				<input type="text" id="eId" name="email" placeholder="EMAIL" onfocus="getInTouch(this)" onfocusout="myFunction(this)">
+				<label id="eLabel">Email</label>
+				<input type="text" id="eId" name="email" placeholder="EMAIL" onfocus="getInTouch(this)" onfocusout="focusOutEffects(this)">
 				<br>
-				<label id="mLabel">Message</label><br>
-				<input type="text" id="mId" name="msg"  placeholder="MESSAGE" onfocus="getInTouch(this)" onfocusout="myFunction(this)"><br><br>
+				<label id="mLabel">Message</label>
+				<input type="text" id="mId" name="msg"  placeholder="MESSAGE" onfocus="getInTouch(this)" onfocusout="focusOutEffects(this)"><br>
 
-				<button onclick="getInTouch(this)" name="sendBtn">SEND</button>
+				<input type="button" onclick="ValidateData()" name="sendBtn" value="Send">
 			</form>
 			<br><br>
 		</div>
 	</div>
 	<div class="footer">
 		<div class="footer_left">
-			<p>Hire Me: <span onclick="copyEmail(this)">...</span></p>
+			<p>Hire me: <span onclick="copyEmail(this)">sofibilal193@gmail.com</span></p>
 		</div>
 		<div class="footer_center">
 			<p>Designed and Developed<br>by</p>
 			<p>&#60;/ Sofi-Bilal &#62;</p>
 		</div>
 		<div class="footer_right">
-			<p>...</p>
+			<span>Copyright &#169 2020. All rights Reserved</span>
 		</div>
 	</div>
 	<div id="menuBtn" onclick="toggleMenu(this)">
 		<div class="barOne"></div>
 		<div class="barTwo"></div>
 		<div class="barThree"></div>
+	</div>
+</div>
+<div id="menuDiv">
+	<div class="menuSubDiv" id="menuSubDivId">
+		<button>HOME</button><br>
+		<button>Work</button><br>
+		<button>Skills</button><br>
+		<button>Awards and Certifications</button><br>
+		<button>About Me</button><br>
+		<button>Contact</button><br>
 	</div>
 </div>
 </body>
