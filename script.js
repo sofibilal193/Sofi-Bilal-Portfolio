@@ -32,77 +32,74 @@ function getInTouch(element) {
 
 	//alert("hi");
 	if(element.name == 'name') {
-		element.placeholder = "";
-		nameLabel.style.display = "block";
-		emailLabel.style.display = "none";
-		msglabel.style.display = "none";
+
+		nameLabel.innerHTML = element.placeholder;
 	}
 	else if(element.name == 'email') {
-		element.placeholder = "";
-		nameLabel.style.display = "none";
-		emailLabel.style.display = "block";
-		msglabel.style.display = "none";
+		emailLabel.innerHTML = element.placeholder;
 	}
 	else if(element.name == 'msg') {
-		element.placeholder = "";
-		nameLabel.style.display = "none";
-		emailLabel.style.display = "none";
-		msglabel.style.display = "block";
-	}
-	else if(element.name == 'sendBtn') {
-		alert("Thank You!!");
+		msglabel.innerHTML = element.placeholder;
 	}
 }
-//focus out
+//Swap placeholder and label Names on Focus otu
 function focusOutEffects(element) {
 	var nameLabel = document.getElementById("nLabel");
 	var emailLabel = document.getElementById("eLabel");
 	var msglabel = document.getElementById("mLabel");
-
 	if(element.name == 'name') {
-		element.placeholder = "Name";
-		nameLabel.style.display = "none";
+
+		nameLabel.innerHTML = '';
 	}
 	else if(element.name == 'email') {
-		element.placeholder = "Email";
-		emailLabel.style.display = "none";
+		emailLabel.innerHTML = '';
 	}
 	else if(element.name == 'msg') {
-		element.placeholder = "Message";
-		msglabel.style.display = "none";
+		msglabel.innerHTML = '';
 	}
+	else if(element.name == 'sendBtn') {
+		alert("Thank You!!");
+	}
+
 }
+//Validate data and show Error
 function ValidateData() {
 	var x = document.getElementById('nId');
 	var y = document.getElementById('eId');
 	var z = document.getElementById('mId');
+	var e1 = document.getElementById('error1');
+	var e2 = document.getElementById('error2');
+	var e3 = document.getElementById('error3');
 	var cond = false;
 
 		if(!x.value.match(/^[a-zA-Z ]{2,30}$/)) {
-			x.style.border  = "2px solid red";
+			e1.innerHTML ="Name must contains Alphabets between 2-30!! <br>";
 		}
 		else {
-			x.style.border  = "1px solid grey";
+			e1.innerHTML = "";
 		}
 		 if(!y.value.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
-				y.style.border  = "2px solid red";
+				e2.innerHTML ="Must be Valid Email!<br>";
 			}
 		else {
-			y.style.border  = "1px solid grey";
+			e2.innerHTML ="";
 
 		}
 		if(z.value.match(/^$|\s+/)) {
-				z.style.border  = "2px solid red";
+				e3.innerHTML ="Message Can not be Empty!";
 			}
 		else {
-			z.style.border  = "1px solid grey";
+			e3.innerHTML = "";
 		}
+
 	}
 
+//Menu Div
+function toggleMenu() {
+  document.getElementById('menuBtn').classList.toggle("change");  
 
-function toggleMenu(x) {
-  x.classList.toggle("change");  
   var y = document.getElementById("menuDiv");
+  var body = document.getElementById("bodyTag");
   //close
   if(y.style.width == '100vw') {
   	y.style.width = '0vw';
@@ -110,5 +107,38 @@ function toggleMenu(x) {
   else {//open
   	y.style.width = '100vw';
   }
-
 }
+/* //function to get scroll-Bar Coordinates
+  window.onscroll = function () { 
+    var doc = document.body;
+    height = doc.clientHeight;
+    scrlTop = doc.scrollLeft ;
+    let scrl = document.pageYOffset || document.documentElement.scrollTop;
+
+ document.getElementById("y").value = height/100 + '  ' + scrl/100;
+   }; 
+   */
+
+function moveScroll(clickedBtn) {
+	toggleMenu();
+	if(clickedBtn.name == 'home') {
+	document.querySelector(".container").scrollIntoView(true);
+	}
+	else if(clickedBtn.name == 'work') {
+	document.querySelector(".work").scrollIntoView(true);
+	}
+	else if(clickedBtn.name == 'skills') {
+		document.querySelector(".skills").scrollIntoView(true);
+	}
+	else if(clickedBtn.name == 'awAndCert') {
+		document.querySelector(".AandC").scrollIntoView(true);
+	}
+	else if(clickedBtn.name == 'AboutMe') {
+		document.querySelector(".abtMe").scrollIntoView(true);
+	}
+	else if(clickedBtn.name == 'contact') {
+		document.querySelector(".contact").scrollIntoView(true);
+	}
+	
+}
+

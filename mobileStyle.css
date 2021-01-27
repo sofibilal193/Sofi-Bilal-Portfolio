@@ -4,12 +4,18 @@
 			font-family: Arial;
 			
 		}
+		html {
+  			scroll-behavior: smooth;
+			}
 		body {
 			background-color:ghostwhite;
+			padding:0;
+			overflow-x: hidden;
 		}
 		.container {
-			width:100vw;
-			margin:auto;
+			width:100%;
+			margin:0;
+			padding:0;
 			position:relative;
 		}
 		.top_bar {
@@ -434,30 +440,49 @@
 	.contact form {
 	background-color:aliceblue;
 	}
-	.inputDiv label {
-		margin-bottom:0px;
-		padding:0;
+	.formDivs {
 		width:100%;
-		display:none;
+		margin:5px 5px;
 	}
-	.contact input[type='text'] {
-		padding:5px;
-		margin-bottom:40px;
-		width:70vw;
-		border:none;
-		margin-top:0px;
-		border:1px solid grey;
+	.formDivsLabel {
 		height:20px;
 	}
-	.contact input[type='text']:hover {
-		border-bottom:2px solid orange;
+	.inputDiv span {
+		vertical-align:bottom;
+		margin-bottom:0;
+		margin-left:5px;
+		display:inline-block;
+		padding:0px;
 	}
-	.contact input:focus {
+	.contact input[type='text'] {
+		width:80vw;
 		border:none;
-		border-bottom:4px solid orange;
+		height:30px;
+		text-align:left;
+		vertical-align:top;
 	}
-	.contact input[name='msg'] {
-		padding-bottom: 30px;
+	.contact input[type='text']:hover {
+		border-bottom:3px solid orange;
+	}
+	textarea:hover {
+		border-bottom:3px solid orange;
+	}
+	textarea {
+		width:80vw;
+		order:none;
+		border:1px solid grey;
+		text-align:left;
+
+		height:70px;
+		resize:none;
+	}
+	#error1,#error2,#error3 {
+		color:red;
+		width:100vw;
+		text-align:left;
+		font-size:10px;
+		margin-top:0;
+
 	}
 	.contact input[type='button'] {
 		background-color:darkorange;
@@ -494,39 +519,38 @@
 		color:white;
 		display:inline-block;
 		text-align:center;
+		margin-top:10px;
 	}
 	.footer_center {
 		width:100%;
 		display:inline-block;
 		height:100%;
 	}
-	.footer_center p {
-		width:100%;
-		height:100%;
+	.footer_left p { 
+		font-size:1.7vh;
+		padding:0;
+		margin:0;
 	}
 .footer_center {
 	color:white;
 	text-align:center;
+	margin-top:10px;
 }
-.footer_center p {
+.footer_center span {
 	font-size:2.5vw;
-	width:100%;
-}
-.footer_center p:nth-child(1) {
 
 }
-.footer_center p:nth-child(2) {
-	background-color:white;
-	color:black;
-	width:20%;
+.footer_center p {
+	width:30%;
 	margin:auto;
 	padding:5px;
 	font-size:15px;
 	font-weight:bold;
 	font-style: oblique;
+	margin:0px auto 0px auto;
 }
 .footer_right {
-	margin-top:10px;
+		margin-top:0;
 		width:100%;
 		color:white;
 		display:inline-block;
@@ -542,12 +566,12 @@
 /*Menu Button and Function*/
 #menuBtn {
 	background-color:white;
-	width:4vh;
-	height:4vh;
+	width:30px;
+	height:30px;
 	position:fixed;
-	right:4vw;
-	bottom:5vw;
-	padding:1vh;
+	right:20px;
+	bottom:20px;
+	padding:5px;
 	border-radius:50%;
 	z-index:2;
 }
@@ -572,9 +596,10 @@
 /*Menu Div*/
  #menuDiv {
  	position:fixed;
- 	right:0;
+ 	right:2vw;
+ 	bottom:0vh;
  	z-index:1;
- 	bottom:0;
+ 	
  	background-color:orange;
  	width:0vw;
  	height:100vh;
@@ -587,11 +612,12 @@ margin-top:5vh;
 width:100vw;
 }
 .menuSubDiv button {
-	margin:4vh 4vh;
+	margin:5vh 5vh;
 	font-weight:bold;
 	background-color:transparent;
 	border:2px solid black;
 	color:white;
+	font-size:20px;
 }
 .menuSubDiv button:hover {
 	background-color:silver;
