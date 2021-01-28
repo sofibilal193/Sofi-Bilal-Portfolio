@@ -9,7 +9,7 @@
 			}
 		body {
 			background-color:ghostwhite;
-			padding:0;
+			padding:0px 2px 0px 2px;
 			overflow-x: hidden;
 		}
 		.container {
