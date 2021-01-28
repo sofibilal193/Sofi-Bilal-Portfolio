@@ -1,58 +1,66 @@
-@media only screen and (min-width: 481px) {
+ @media only screen and (min-width: 481px) {
 /*Top Bar*/
 		* {
 			font-family: Arial;
-			padding:0px;
-			margin:0px;
+			
 		}
+		html {
+  			scroll-behavior: smooth;
+			}
 		body {
-			background-color:silver;
+			background-color:ghostwhite;
+			padding:0;
+			overflow-x: hidden;
 		}
 		.container {
-			width:96vw;
-			margin:auto;
+			width:100%;
+			margin:0;
+			padding:0;
 			position:relative;
-			padding-left:1vw;
 		}
 		.top_bar {
 			margin-top:1vh;
 			width:100%;
 			display:block;
-			height:100px;
-			margin-bottom:12%;
+			height:10vh;
+			border:1px solid black;
 		}
 		.t_right {
 			float:right;
-			width:45vw;
 			text-align:right;
-			margin-right:;
 			display:inline-block;
+			height:100%;
+			border:1px solid black;
 		}
 		.t_left {
 			float:left;
 			font-weight:bold;
-			font-size:40px;
-			width:45vw;
+			font-size:35px;
+			height:100%;
 			display:inline-block;
+			border:1px solid black;
 		}
 		.t_left img {
 			display:inline-block;
-			width:5vw;
-			height:5vw;
+			width:6vw;
+			height:6vw;
 			vertical-align:top;
+			margin-top:;
+			border:none;
+			padding:2px;
+			box-shadow: -10px -10px -10px grey;
 		}
 		.t_left h3 {
 			display:inline-block;
 			font-weight:bold;
-			font-size:2.8vw;
+			font-size:3vw;
 			vertical-align:top;
-			margin-left:5px;
-			margin-top:2%;
+			margin-left:0;
+			margin-top:0.5vw;
 		}
 		.t_right .icons a {
-			margin-right:1vw;
-			font-size:4vw;
-
+			margin-right:0.4vw;
+			font-size:3vw;
 		}
 		.inside_t_right {
 			text-align:left;
@@ -66,28 +74,33 @@
 			display:inline-block;
 		}
 		.t_right a {
-			text-align:left;
-
+			text-align:center;
 		}
-		.seeMyCvDiv span {
-			color:black;
+		.t_right .seeMyCvDiv button {
+			background-color: darkorange;
+ 			color:black;
+ 			font-size: 8px;
+ 			padding: 5px 5px;
+ 			border: none;
+ 			cursor: pointer;
+			border-radius: 5px;
+ 			text-align: center;
+ 			font-weight:bold;
 		}
-		.t_right i {
-			cursor:pointer;
+		.t_right .seeMyCvDiv button:hover {
+			background-color: black;
+  			color: white;
 		}
+		
 
 		.t_right .seeMyCv {
 			text-decoration:none;
 			background-color:darkorange;
 			padding:1vh 1vw 1vh 0 ;
-			font-size:1vw;
+			font-size:2vw;
 			color:white;		
 			vertical-align:bottom;
 			float:left;
-		}
-		.t_right button span {
-			vertical-align:top;
-			font-size:1em;
 		}
 		/*Mixed.................*/
 		.heading {
@@ -102,9 +115,10 @@
 /*Introduction and gif*/
 	.intro {
 		width:100%;
+		margin-top:2vh;
 	}
 	.in_left {
-		width:56%;
+		width:60%;
 		display:inline-block;
 		vertical-align:top;
 		margin:0;
@@ -123,13 +137,15 @@
 	/*......im..*/
 	.im {
 		font-weight:bold;
-		font-size:3vw;
+		font-size:4vw;
 		display:inline-block;
 		vertical-align:top;
 		margin-top:0px;
+		float:left;
 	}
-	#name {
-		color:darkorange;
+	.im_all {
+		height:auto;
+		margin-top:5px;
 	}
 	.im_all, .in_details {
 		vertical-align:top;
@@ -137,70 +153,75 @@
 	.brF, .brL {
 		color:darkorange;
 		font-weight:bold;
-		font-size:3vw;
+		font-size:4vw;
 		display:inline-block;
 		vertical-align:top;
 		margin-top:0px;
+		margin-bottom:0;
 	}
 	.brF {
 		float:left;
 	}
 	.brL {
 		float:right;
-		margin-right:5%;
+		margin-right:;
 	}
 
 	.in_left ul{
 		display:inline-block;
-		width:60%;
 		vertical-align:top;
 		margin-top:0px;
+		margin-bottom:0px;
 		padding:0px;
 		text-align:left;
-		vertical-align:top;
 	}
 	.in_left ul li {
 		list-style:none;
 		text-align:left;
-		font-size:3vw;
+		font-size:4vw;
   		font-weight:bold;
   		vertical-align:top;
   		display:none;
   		width:100%;
 	} 
 	.in_left .in_details p {
-		font-size:2.1vw;
+		font-size:2.8vw;
+		padding-top:0;
+		margin-top:0;
+		font-family:arial;
 	}
 
 	.in_right {
-		width:40%;
+		width:37%;
 		display:inline-block;
 	}
 	.in_right img {
-		width:20vw;
-		height:20vw;
+		width:25vw;
+		height:25vw;
+		display:inline-block;
 	}
 
 	.work {
-		margin-top:5vh;
+		margin-top:1vw;
 	}
 	/*Publication*/
 	.publication {
-		pointer-events: none;
-		opacity: 0.5;
-  		background: #CCC;
+  		
 	}
 	.pub_room {
 	}
 	.pub_box {
 		text-align:left;
 		width:30vw;
+		height:45vw;
 		font-size:2.3vw;
-		height:auto;
 		display:inline-block;
 		background-color:aliceblue;
 		padding-left:10px;
 		margin-right:15px;
+		transition: 0.2s;
+		box-shadow: 0 0 5px 2px grey;
+		position:relative;
 	}
 	.pub_head, .pub_on, .pub_date, .pub_btn {
 		width:100%;
@@ -214,14 +235,28 @@
 	.pub_date {
 		font-size:0.8em;
 	}
-	.pub_btn button {
-		background-color:darkorange;
-		padding:1vh 1vw 1vh 0 ;
-		font-size:1.5vw;
-		color:white;		
+	.pub_btn {
+		width:100%;
 		vertical-align:bottom;
-		float:left;
-		border-radius:5px;
+		position:absolute;
+		bottom:5px;
+		width:90%;
+		text-align:left;
+	}
+	.pub_btn button {
+  		background-color: darkorange;
+ 		color: black;
+ 		font-size: 8px;
+ 		padding: 5px 5px;
+ 		border: none;
+ 		cursor: pointer;
+		border-radius: 5px;
+ 		text-align: center;
+ 		font-weight:bold;
+		}
+	.pub_btn button:hover {
+		background-color: black;
+  		color: white;
 		}
 		/*Projects*/
 
@@ -229,31 +264,32 @@
 		text-align:left;
 		width:28%;
 		font-size:2vw;
-		height:46vw;
+		height:56vw;
 		display:inline-block;
 		background-color:aliceblue;
 		padding-left:10px;
-		margin-right:5px;
+		margin-right:4px;
 		vertical-align:top;
 		position:relative;
 		transition: 0.2s;
+		box-shadow: 0 0 5px 2px grey;
 	}
 	.proj_box:hover { 
-		box-shadow:5px 5px 5px grey;
 		opacity:0.9;
 	 }
 	.proj_icon {
-		width:100%;
+		width:80%;
 		text-align:center;
 	}
 	.proj_box img {
-		width:50px;
-		height:50px;
-		border-radius: 50%;
+		width:30px;
+		height:30px;
+		border-radius:50%;
+		text-align:center;
 	}
 	.proj_head {
 		width:100%;
-		font-size:0.9em;
+		font-size:1.2em;
 	}
 	.proj_intro {
 		width:100%;
@@ -269,21 +305,27 @@
 		vertical-align:bottom;
 		position:absolute;
 		bottom:5px;
+		width:90%;
+		text-align:left;
 	}
 	.proj_btn button {
-		background-color:darkorange;
-		padding:1vh 1vw 1vh 0 ;
-		font-size:1.5vw;
-		color:white;		
-		vertical-align:bottom;
-		float:left;
-		border-radius:5px;
-		border:none;
+		background-color: darkorange;
+ 		color: black;
+ 		font-size: 8px;
+ 		padding: 5px 5px;
+ 		border: none;
+ 		cursor: pointer;
+		border-radius: 5px;
+ 		text-align: center;
+ 		font-weight:bold;
+		
 		}
-		.proj_btn button:hover {
-			opacity:0.9;
-			cursor:pointer;
-			border:1px solid darkorange;
+	.proj_btn button:hover {
+		background-color: black;
+  		color: white;
+		}
+	.proj_btn button:focus {
+			border:none;
 		}
 	/*Skills*/
 	.skills {
@@ -293,10 +335,13 @@
 	}
 	.ik_box {
 	text-align:center;
-	width:24%;
+	width:23%;
 	height:20vw;
 	display:inline-block;
 	vertical-align:top;
+	background-color:aliceblue;
+	transition: 0.2s;
+	box-shadow: 0 0 5px 2px grey;
 	
 	}
 	.ik_box div:nth-child(1) {
@@ -306,32 +351,36 @@
 		position:relative;
 	}
 	.iconify {
-		font-size:5vw;
+		font-size:6vw;
 		margin-top:10%;
 	}
 
 	.ik_box div:nth-child(2) {
 		height:50%;
-		font-size:3vw;
+		font-size:4vw;
 		background-color:black;
 		color:white;
 	}
 	.ik_name {
-		font-size:1.56vw;
-		margin-top:%;
+		font-size:2vw;
 	}
 	
 	/*Tools and Technologies*/
 	.ttBox {
-		width:30%;
+		width:23%;
 		display:inline-block;
 		vertical-align:top;
 		border-radius:50
 		margin:auto;
+		
 	}
 	.ttBox p {
 		width:100%;
 		text-align:left;
+		font-size:2.5vw;
+		margin-top:1px;
+		margin-bottom:4px;
+		background-color:aliceblue;
 	}
 	/*Awards and certification*/
 	.AandC ul {
@@ -342,73 +391,119 @@
 		list-style:none;
 		text-align:left;
 		margin-left:0;
+		font-size:2.5vw;
+		margin-top:1vh;
 	}
 	/*About Me*/
 	.abtMe {
+
 	}
 	.abt_dp_and_introDuc {
 		width:100%;
 		text-align:center;
+
 	}
 	.abt_dp_and_introDuc .dp {
 		display:inline-block;
-		width:26vw;
+		width:100vw;
 		margin-right:1vw;
 	}
 	.abt_dp_and_introDuc .dp img {
 		border-radius:50%;
-		width:70%;
-		height:70%;
-
+		width:15vh;
+		height:15vh;
 	}
 	.abt_dp_and_introDuc .introDuc {
 		display:inline-block;
 		vertical-align:top;
-		width:70%;
+		width:99%;
 		margin-top:2vh;
 	}
 	.abt_dp_and_introDuc .introDuc p {
 		width:100%;
 		padding:0;
 		margin:0;
-		font-size:;
+		font-size:2.9vw;
 		text-align:left;
 	}
 
 	.info {
 		width:100%;
-
+		font-size:2.5vw;
+		text-align:;
+	}
+	.info .info_mainUl {
+		padding:0;
+		margin:0;
 	}
 	
 	.contact {
 		width:100vw;
 	}
-	.inputDiv {
+	.contact form {
+	background-color:aliceblue;
 	}
-	.contact input {
-		padding:10px;
-		margin-bottom:1vh;
-		width:55vw;
+	.formDivs {
+		width:100%;
+		margin:5px 5px;
+	}
+	.formDivsLabel {
+		height:20px;
+	}
+	.inputDiv span {
+		vertical-align:bottom;
+		margin-bottom:0;
+		margin-left:5px;
+		display:inline-block;
+		padding:0px;
+	}
+	.contact input[type='text'] {
+		width:80vw;
 		border:none;
-		margin-top:0px;
+		height:30px;
+		text-align:left;
+		vertical-align:top;
 	}
-	.contact input:hover {
-		border-bottom:2px solid orange;
+	.contact input[type='text']:hover {
+		border-bottom:3px solid orange;
 	}
-	.contact input:focus {
-		border:none;
-		border-bottom:4px solid orange;
+	textarea:hover {
+		border-bottom:3px solid orange;
 	}
-	.contact input[name='msg'] {
-		padding-bottom: 50px;
+	textarea {
+		width:80vw;
+		order:none;
+		border:1px solid grey;
+		text-align:left;
+
+		height:70px;
+		resize:none;
 	}
-	.contact button {
-		padding:10px;
-		border-radius:10px;
+	#error1,#error2,#error3 {
+		color:red;
+		width:100vw;
+		text-align:left;
+		font-size:10px;
+		margin-top:0;
+
 	}
-	.inputDiv label {
-		display:none;
+	.contact input[type='button'] {
+		background-color:darkorange;
+ 		color:black;
+ 		font-size: 18px;
+ 		padding:6px 6px;
+ 		border:none;
+ 		cursor:pointer;
+		border-radius: 5px;
+ 		text-align: center;
+ 		margin-left:2px;
+
 	}
+	.contact input[type='button']:hover {
+		color:white;
+		background-color:black;
+	}
+		
 	.abtMe li {
 		list-style:none;
 	}
@@ -419,41 +514,69 @@
 	.footer {
 		width:100%;
 		background-color:black;
-		height:100px;
+		text-align:center;
 	}
 	.footer_left {
-		width:31%;
+		width:100%;
 		vertical-align:top;
 		color:white;
 		display:inline-block;
 		text-align:center;
+		margin-top:10px;
 	}
 	.footer_center {
-		width:31%;
+		width:100%;
 		display:inline-block;
 		height:100%;
 	}
-	.footer_center img {
-		width:100%;
-		height:100%;
+	.footer_left p { 
+		font-size:1.7vh;
+		padding:0;
+		margin:0;
 	}
-	.footer_right {
-		width:31%;
+.footer_center {
+	color:white;
+	text-align:center;
+	margin-top:10px;
+}
+.footer_center span {
+	font-size:2.5vw;
+
+}
+.footer_center p {
+	width:30%;
+	margin:auto;
+	padding:5px;
+	font-size:15px;
+	font-weight:bold;
+	font-style: oblique;
+	margin:0px auto 0px auto;
+}
+.footer_right {
+		margin-top:0;
+		width:100%;
 		color:white;
 		display:inline-block;
 		vertical-align:top;
 		text-align:center;
+	}
+	.footer_right span {
+		font-size:0.8em;
+		padding:2px;
+		color:red;
+		font-weight:bold;
 	}
 /*Menu Button and Function*/
 #menuBtn {
 	background-color:white;
-	width:4vh;
-	height:4vh;
+	width:30px;
+	height:30px;
 	position:fixed;
-	right:4vw;
-	bottom:5vw;
-	padding:1vh;
+	right:20px;
+	bottom:20px;
+	padding:5px;
 	border-radius:50%;
+	z-index:2;
 }
 .barOne, .barTwo, .barThree {
 	background-color:black;
@@ -461,7 +584,6 @@
 	height:15%;
 	margin:13% auto 10% auto;
 	transition: 0.1s;
-	
 }
 .change .barOne {
   -webkit-transform: rotate(-45deg) translate(-6px, 6px);
@@ -474,4 +596,61 @@
   -webkit-transform: rotate(45deg) translate(-5px, -5px);
   transform: rotate(45deg) translate(-5px, -5px);
 }
+/*Menu Div*/
+ #menuDiv {
+ 	position:fixed;
+ 	right:2vw;
+ 	bottom:0vh;
+ 	z-index:1;
+ 	
+ 	background-color:orange;
+ 	width:0vw;
+ 	height:100vh;
+ 	border-radius:;
+	transition:0.5s;
 }
+.menuSubDiv {
+text-align:center;
+margin-top:5vh;
+width:100vw;
+}
+.menuSubDiv button {
+	margin:5vh 5vh;
+	font-weight:bold;
+	background-color:transparent;
+	border:2px solid black;
+	color:white;
+	font-size:20px;
+}
+.menuSubDiv button:hover {
+	background-color:silver;
+	color:black;
+	transition:0.1s;
+	cursor:pointer;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
