@@ -1,16 +1,20 @@
 var i =0;
-var x = document.getElementsByClassName("other_names");
-window.onload = function() {upDown()};
+var names = document.getElementsByClassName("other_names");
+window.onload = function() {
+	upDown();//call for Show/Hide Names
+	
+	deskTopFun();//Call to move Elements
+};
 
 function upDown() {
 
-if(i == x.length) {
+if(i == names.length) {
 i = 0;
 }
-for(var j=0;j<x.length;j++) {
-x[j].style.display = "none";
+for(var j=0;j<names.length;j++) {
+names[j].style.display = "none";
 }
-x[i].style.display = "block";
+names[i].style.display = "block";
 
 i++;
 					
@@ -18,68 +22,52 @@ setTimeout(upDown, 2000);
 }
 
 
-function getInTouch(element) {
-	var nameField = document.getElementById("nId");
-	var emailField = document.getElementById("eId");
-	var msgField = document.getElementById("mId");
+function deskTopFun() {
+	var deskMin = window.matchMedia('all and (min-width: 768px)').matches;//true or false
+	var iconBox = document.getElementById("iconDiv").cloneNode(true);//make clone and move
 
-	var nameLabel = document.getElementById("nLabel");
-	var emailLabel = document.getElementById("eLabel");
-	var msglabel = document.getElementById("mLabel");
+	if(deskMin) {
+		var topParent = document.getElementById("topBarDiv");//parent in which the element is moved
+		var refChildTop = document.getElementById("see_myCV_Div");//reference child of element to be inserted
 
-	//alert("hi");
-	if(element.name == 'name') {
+		topParent.insertBefore(iconBox, refChildTop);
+		document.getElementsByClassName("icons")[1].remove();
+		}
+		else {
+		var botmParent = document.getElementById("bottomMaiAndIconDiv");//parent in which the element is moved
+		var refChildBotm = document.getElementById("hireMeDiv");//reference child of element to be inserted
 
-		nameLabel.innerHTML = element.placeholder;
-	}
-	else if(element.name == 'email') {
-		emailLabel.innerHTML = element.placeholder;
-	}
-	else if(element.name == 'msg') {
-		msglabel.innerHTML = element.placeholder;
-	}
-}
-//Swap placeholder and label Names on Focus otu
-function focusOutEffects(element) {
-	var nameLabel = document.getElementById("nLabel");
-	var emailLabel = document.getElementById("eLabel");
-	var msglabel = document.getElementById("mLabel");
-	if(element.name == 'name') {
-
-		nameLabel.innerHTML = '';
-	}
-	else if(element.name == 'email') {
-		emailLabel.innerHTML = '';
-	}
-	else if(element.name == 'msg') {
-		msglabel.innerHTML = '';
-	}
-	else if(element.name == 'sendBtn') {
-		alert("Thank You!!");
-	}
-
+		botmParent.insertBefore(iconBox, refChildBotm);
+		document.getElementsByClassName("icons")[0].remove();
+		}
 }
 //Validate data and show Error
 function ValidateData() {
-	var x = document.getElementById('nId');
-	var y = document.getElementById('eId');
-	var z = document.getElementById('mId');
-	var e1 = document.getElementById('error1');
-	var e2 = document.getElementById('error2');
-	var e3 = document.getElementById('error3');
+	var x = document.getElementById('nId'),
+	    y = document.getElementById('eId'),
+	    z = document.getElementById('mId'),
+	   e1 = document.getElementById('error1'),
+	   e2 = document.getElementById('error2'),
+	   e3 = document.getElementById('error3'),
+	   cond1 = false,
+	   cond2 = false,
+	   cond3 = false;
 
-		if(!x.value.match(/^[a-zA-Z ]{2,30}$/)) {
-			e1.innerHTML ="Name must contains Alphabets only of length 2-30 only <br>";
+	  
+			if(!x.value.match(/^[a-zA-Z ]{2,30}$/)) {
+			e1.innerHTML ="Must be Alphabets only (Min. 2 and Max 30)";
 		}
 		else {
 			e1.innerHTML = "";
+			cond1 = true;
 		}
 
 		 if(!y.value.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
-				e2.innerHTML ="Must be Valid Email!<br>";
+				e2.innerHTML ="Must be Valid Email!";
 			}
 		else {
 			e2.innerHTML ="";
+			cond2 = true;
 		}
 
 		if(z.value == "" || z.value == " ") {
@@ -87,11 +75,13 @@ function ValidateData() {
 			}
 		else {
 			e3.innerHTML = "";
+			cond3 = true;
 		}
-
-		if(e1.innerHTML == "" && e2.innerHTML == "" && e3.innerHTML == "" ) {
-			alert("Thank You " + nId.value + "\nI will be back to you soon!!");
-		} 
+			
+		 if(cond1  && cond2  && cond3 ) {
+	   		alert("Thank You " + nId.value + "\nI will be back to you soon!!");
+		   }
+		
 	}
 
 //Menu Div
@@ -111,16 +101,6 @@ function toggleMenu() {
   }
 
 }
- //function to get scroll-Bar Coordinates
-/*  window.onscroll = function () { 
-    var doc = document.body;
-    height = doc.clientHeight;
-    scrlTop = doc.scrollLeft ;
-    let scrl = document.pageYOffset || document.documentElement.scrollTop;
-
- document.getElementById("y").value = 'clientHeight: ' + height/100 + ' Yoffset ' + (scrl)/100;
-   }; 
-   */
 
 function moveScroll(clickedBtn) {
 	toggleMenu();
@@ -146,6 +126,7 @@ function moveScroll(clickedBtn) {
 
 function moveToTop() {
 	window.scrollTo(0,0);
+	//alert("hi");
 }
 
 /*

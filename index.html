@@ -12,62 +12,52 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://kit.fontawesome.com/04847cf7d3.js" crossorigin="anonymous"></script>
 	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="mobileStyle.css">
-	<link rel="stylesheet" type="text/css" href="desktopTabStyles.css">
+	<link rel="stylesheet" type="text/css" href="mobile.css"><!--Mobile Styles-->
+	<link rel="stylesheet" type="text/css" href="tablet.css"><!--Tablet Styles-->
+	<link rel="stylesheet" type="text/css" href="desktop.css"><!--Desktop Styles-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 	<script type="text/javascript" src="script.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body id="bodyTag">
+<body id="bodyTag" onresize="deskTopFun();">
 <div class="container" style="margin:auto;">
 	<div class="top_bar">
-		<div class="t_left">
+		<div class="t_left" id="topBarDiv">
 			<img src="images/logo.jpg">
 			<h3>BILAL AHMAD SOFI</h3>
-		</div>
-		<div class="t_right">
-			<div class="inside_t_right">
-			 <div class="icons">
-				<a href="facebook.com/sofibilal193" style="color:blue;"><i class="fa fa-facebook"></i></a>
-				<a href="instagram/sofi_bilal___" style="color:darkred;"><i class="fa fa-instagram"></i></a>
-				<a href="twitter.com/sofibilal193" style="color:blue;"><i class="fa fa-twitter"></i></a>
-				<a href="linkedin.com/sofibilal193" style="color:darkblue;"><i class="fa fa-linkedin"></i></a>
-				<a href="github.com/sofibilal193" style="color:black;"><i class="fa fa-github"></i></a>
-				<a href="" style="color:green;"><i class="fa fa-whatsapp"></i></a>
-			 </div>
-			<div class="seeMyCvDiv">
-			<button href="#" onclick="window.open('NoidaResume.pdf');" class="seeMyCv">See My CV &nbsp;<i class="fa fa-file-pdf"></i></button>
-			</div>
+			
+			<div class="seeMyCvDiv" id="see_myCV_Div">
+				<button href="#" onclick="window.open('NoidaResume.pdf');" class="seeMyCv" id="cvBtn">See My CV &nbsp;<i class="fa fa-file-pdf"></i></button>
 			</div>
 		</div>
 	</div>
-	
 	<div class="intro">
-		<div class="in_left"><br>
+		<div class="in_right">
+			<img src="images/logo.gif">
+		</div>
+		<div class="in_left">
 			<div class="im_all">
-			<p class="brF">{&nbsp</p>
+			<p class="brF">[&nbsp</p>
 			<p class="im">I am&nbsp</p>
 			<ul>
 				<li class="other_names" id="name" style="color:darkred;"> BILAL AHMAD SOFI</li>
+				<li class="other_names">Algorithm Enthusiast</li>
+				<li class="other_names">Data Structures Enthusiast</li>
 				<li class="other_names">a Researcher</li>
 				<li class="other_names">an AI Enthusiast</li>
 				<li class="other_names">a Full Stack Developer</li>
 				<li class="other_names">Programmer</li>
-				<li class="other_names">Looser</li>
 				<li class="other_names">Social Activist</li>
-				<li class="other_names">Debugger</li>
+				<li class="other_names">Looser</li>
 			</ul>
-			<p class="brL"> }</p>
+			<p class="brL"> ]</p>
 			</div>
+			<br>
 			<div class="in_details">
 			<p>
 				Hello, I am Bilal Ahmad Sofi, Artificial Intelligence and Data Science Enthusiast and a Full Stack Developer.
-				
 			</p>
 			</div>
-		</div>
-		<div class="in_right">
-			<img src="logo.gif">
 		</div>
 	</div>
 	<br>
@@ -78,7 +68,22 @@
 		<div class="pub_room">
 			<div class="pub_box">
 				<div class="pub_head">
-					<p ><b>This is heading pff published work, Still in process will be available soo.y</b></p><br><br>
+					<p ><b>This is heading of published work, Still in process will be available soon.</b></p><br><br>
+				</div>
+				<div class="pub_on">
+					<p>The Journal where it has been been posted</p><br><br>
+				</div>
+				<div class="pub_date">
+					<p>Published: <i>Month, Year</i></p><br><br>
+				</div>
+				<div class="pub_btn">
+					<button>Read Full Text <i class="fa fa-book"></i></button>
+					
+				</div>
+			</div>
+			<div class="pub_box">
+				<div class="pub_head">
+					<p ><b>This is heading of published work, Still in process will be available soon.</b></p><br><br>
 				</div>
 				<div class="pub_on">
 					<p>The Journal where it has been been posted</p><br><br>
@@ -99,23 +104,23 @@
 		<div class="subheads"><h2>PROJECTS</h2></div>
 		<div class="proj_room">
 			<div class="proj_box"><br>
-				<div class="proj_icon"><img src="images/waytok.png"></div><br>
-				<div class="proj_head"><p><b>J&K Tourism Webiste</b></p></div><br>
-				<div class="proj_intro"><p>Website developed in by HTML,CSS,JavaScript,JQuery and Python-Django. Eases the travelers to explore the beautiful destinations of Jammu, Kashmir and Ladakh</p></div><br>
+				<div class="proj_icon"><img src="images/waytok.png"></div>
+				<div class="proj_head"><p><b>J&K Tourism Webiste</b></p></div>
+				<div class="proj_intro"><p>Website developed in by HTML,CSS,JavaScript,JQuery and Python-Django. Eases the travelers to explore the beautiful destinations of Jammu, Kashmir and Ladakh</p></div>
 				<div class="proj_date"><p>Published: <i>January, 2020</i></p></div><br>
-				<div class="proj_btn"><button  onclick="window.open('waytokashmir.com')">View Project <i class="fa fa-eye"></i></button></div><br><br>
+				<div class="proj_btn"><button  onclick="window.open('waytokashmir.com')">View Project <i class="fa fa-eye"></i></button></div>
 			</div>
 			<div class="proj_box"><br>
-				<div class="proj_icon"><img src="images/cnn.jpg"></div><br>
-				<div class="proj_head"><p><b>Object Recognition and Image Colorization</b></p></div><br>
-				<div class="proj_intro"><p>Covnvolution Neural Network(CNN) Based Project colorizes the (Inputted) Grey-Scale image to (Outputted) Coloured Image.</p></div><br>
+				<div class="proj_icon"><img src="images/cnn.jpg"></div>
+				<div class="proj_head"><p><b>Object Recognition and Image Colorization</b></p></div>
+				<div class="proj_intro"><p>Covnvolution Neural Network(CNN) Based Project colorizes the (Inputted) Grey-Scale image to (Outputted) Coloured Image.</p></div>
 				<div class="proj_date"><p>Published: <i>January, 2021</i></p></div><br>
-				<div class="proj_btn"><button>View Project <i class="fa fa-eye"></i></button></div><br><br>
+				<div class="proj_btn"><button>View Project <i class="fa fa-eye"></i></button></div>
 			</div>
 			<div class="proj_box"><br>
-				<div class="proj_icon"><img src="images/homeautomationlogo.jfif"></div><br>
-				<div class="proj_head"><p><b>Home Automation</b></p></div><br>
-				<div class="proj_intro"><p>Home Appliances are controlled using Arduino-UNO and Android Application,. Specific message are transfered to Arduino through Android Application for specific commands of Arduino.</p></div><br>
+				<div class="proj_icon"><img src="images/homeautomationlogo.jfif"></div>
+				<div class="proj_head"><p><b>Home Automation</b></p></div>
+				<div class="proj_intro"><p>Home Appliances are controlled using Arduino-UNO and Android Application,. Specific message are transfered to Arduino through Android Application for specific commands of Arduino.</p></div>
 				<div class="proj_date"><p>Published: <i>January, 2021</i></p></div><br>
 				<div class="proj_btn"><button>View Project <i class="fa fa-eye"></i></button></div><br><br>
 			</div>
@@ -160,34 +165,22 @@
 		</div>
 		</div>
 	</div>
-	<br><br>
+	<br>
 	<div class="TaT">
 		<div class="TaT_head subheads"><h2>TOOLS AND TECHNOLOGIES</h2></div>
 		<div class="TaT_room" style="width:100%;">
-			<div class="ttBox">
-				<p>C</p>
-				<p>C++</p>
-				<p>Python</p>
-				<p>Django</p>
-			</div>
-			<div class="ttBox">
-				<p>JavaScript</p>
-				<p>JQuery</p>
-				<p>HTML</p>
-				<p>CSS</p>
-			</div>
-			<div class="ttBox">
-				<p>SQL Databases</p>
-				<p>-------------</p>
-				<p>-------------</p>
-				<p>-------------</p>
-			</div>
-			<div class="ttBox">
-				<p>-------------</p>
-				<p>-------------</p>
-				<p>-------------</p>
-				<p>-------------</p>
-			</div>
+				<ul>
+					<li>Algorithms Design and Analysis</li>
+					<li>Data Structures</li>
+					<li>SQL Database</li>
+					<li>C/C++</li>
+					<li>Python</li>
+					<li>Django</li>
+					<li>JavaScript</li>
+					<li>JQuery</li>
+					<li>HTML</li>
+					<li>CSS</li>
+				</ul>
 		</div>
 	</div>
 	<br>
@@ -240,21 +233,21 @@
 		<div><h1 class="heading">GET IN TOUCH</h1></div>
 		<div class="inputDiv">
 			<form method="get">
-				<div class="formDivsLabel"><span id="nLabel"></span></div>
+				<div class="formDivsLabel"><span id="nLabel">Name:</span></div>
 				<div class="formDivs">
-					<input type="text" id="nId" name="name" placeholder="Name" onfocus="getInTouch(this)" onfocusout="focusOutEffects(this)">
+					<input type="text" id="nId" name="name">
 				</div>
 				<div class="formDivs"><p id="error1"></p></div>
 
-				<div class="formDivsLabel"><span id="eLabel"></span></div>
+				<div class="formDivsLabel"><span id="eLabel">Email:</span></div>
 				<div class="formDivs">
-					<input type="text" id="eId" name="email" placeholder="Email" onfocus="getInTouch(this)" onfocusout="focusOutEffects(this)"></div>
+					<input type="text" id="eId" name="email"></div>
 				<div class="formDivs"><p id="error2"></p>
 				</div>
 				
-				<div class="formDivsLabel"><span id="mLabel"></span></div>
+				<div class="formDivsLabel"><span id="mLabel">Message:</span></div>
 				<div class="formDivs">
-					<textarea id="mId" name="msg"  placeholder="Message" onfocus="getInTouch(this)" onfocusout="focusOutEffects(this)"></textarea></div>
+					<textarea id="mId" name="msg"></textarea></div>
 				<div class="formDivs"><p id="error3"></p></div>
 				<br>
 				<div class="formDivs"><input type="button" onclick="ValidateData()" name="sendBtn" value="Send"></div>
@@ -262,10 +255,44 @@
 			<br><br>
 		</div>
 	</div>
-	<div class="footer">
-		<div class="footer_left">
-			<p>Hire me: <a href="mailto:sofibilal193@gmail.com">sofibilal193@gmail.com</a><br></p>
+	<!--Got to top , Menu button and Menu Div-->
+		<div id="g2Top" onclick="moveToTop()">
+			<span class="fas fa-arrow-up"></span>
 		</div>
+		<br>
+		<div id="menuBtn" onclick="toggleMenu(this)">
+			<div class="barOne"></div>
+			<div class="barTwo"></div>
+			<div class="barThree"></div>
+		</div>
+		<div id="menuDiv">
+			<div class="menuSubDiv" id="menuSubDivId">
+				<br>
+				<button name="home" onclick="moveScroll(this);">HOME</button><br>
+				<button name="work" onclick="moveScroll(this);">Work</button><br>
+				<button name="skills" onclick="moveScroll(this);">Skills</button><br>
+				<button name="awAndCert" onclick="moveScroll(this);">Awards and Certifications</button>
+				<br>
+				<button name="AboutMe" onclick="moveScroll(this);">About Me</button><br>
+				<button name="contact"  onclick="moveScroll(this);">Contact</button>
+			</div>
+		</div>
+		<!--Mail-->
+	<div class="iconsAndMail" id="bottomMaiAndIconDiv">
+		<div class="mailDiv" id="hireMeDiv">
+			<p><span>Hire me: </span><a href="mailto:sofibilal193@gmail.com"> sofibilal193@gmail.com</a><br></p>
+		</div>
+		<div class="icons" id="iconDiv">
+			<a href="facebook.com/sofibilal193" style="color:blue;"><i class="fa fa-facebook"></i></a>
+			<a href="instagram/sofi_bilal___" style="color:darkred;"><i class="fa fa-instagram"></i></a>
+			<a href="twitter.com/sofibilal193" style="color:blue;"><i class="fa fa-twitter"></i></a>
+			<a href="linkedin.com/sofibilal193" style="color:darkblue;"><i class="fa fa-linkedin"></i></a>
+			<a href="github.com/sofibilal193" style="color:black;"><i class="fa fa-github"></i></a>
+			<a href="" style="color:green;"><i class="fa fa-whatsapp"></i></a>
+		</div>
+	</div>
+		
+	<div class="footer">
 		<div class="footer_center">
 			<span>Designed and Developed<br>by</span>
 			<p>&#60;/Sofi-Bilal&#62;</p>
@@ -274,29 +301,8 @@
 			<span>Copyright &#169 2020. All rights Reserved</span>
 		</div>
 	</div>
-
-		<div id="g2Top">
-			<span onclick="moveToTop()" class="fas fa-arrow-up"></span>
-		</div>
-		<br>
-	<div id="menuBtn" onclick="toggleMenu(this)">
-		<div class="barOne"></div>
-		<div class="barTwo"></div>
-		<div class="barThree"></div>
-	</div>
-</div>
-<div id="menuDiv">
-	<div class="menuSubDiv" id="menuSubDivId">
-		<br>
-		<button name="home" onclick="moveScroll(this);">HOME</button><br>
-		<button name="work" onclick="moveScroll(this);">Work</button><br>
-		<button name="skills" onclick="moveScroll(this);">Skills</button><br>
-		<button name="awAndCert" onclick="moveScroll(this);">Awards and Certifications</button>
-		<br>
-		<button name="AboutMe" onclick="moveScroll(this);">About Me</button><br>
-		<button name="contact"  onclick="moveScroll(this);">Contact</button><br>
-	</div>
-</div>
+	<!-- Menu and Menu Div -->
 <!--input type="text" id="y" name="" style="position: fixed; bottom:0;width:100%;"-->
+</div>
 </body>
 </html>
