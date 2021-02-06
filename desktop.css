@@ -1,4 +1,4 @@
- @media only screen and (min-width: 1024px) {
+ @media only screen and (min-width: 2001px) {
 
 		body {border:2px solid red;}
 		/*Top Bar*/	
@@ -6,7 +6,8 @@
 			margin-top:1vh;
 			width:100%;
 			display:block;
-			margin-bottom:3vh;
+			border:2px solid black;
+			height:20vh;
 			
 		}
 		.t_left {
@@ -31,10 +32,9 @@
 		.t_left h3 {
 			display:inline-block;
 			font-weight:bold;
-			font-size:4vw;
+			font-size:2.5vw;
 			vertical-align:top;
 			margin-left:0;
-			margin-top:2.5vw;
 		}
 		.icons {
 			width:40%;
@@ -45,7 +45,7 @@
 		}
 		.icons a {
 			margin-right:1px;
-			font-size:4vw;
+			font-size:3vw;
 
 			}
 
@@ -57,7 +57,7 @@
 		.seeMyCvDiv button {
 			background-color: darkorange;
  			color:black;
- 			font-size:3vw;
+ 			font-size:2vw;
  			padding: 5px 5px;
  			border: none;
  			cursor: pointer;
@@ -84,13 +84,14 @@
 /*Introduction and gif*/
 	.intro {
 		width:100%;
-		border:1px solid black;
+		border:2px solid black;
+		height:80vh;
 	}
 	.in_left {
 		width:69%;
 		display:inline-block;
 		vertical-align:top;
-		border:1px solid red;
+		
 	}
 	.work, .intro, .abtMe, .contact {
 		
@@ -426,6 +427,9 @@
 	.contact {
 		width:100vw;
 	}
+	.inputDiv {
+		width:100%;
+	}
 	.contact form {
 	background-color:aliceblue;
 	}
@@ -435,45 +439,42 @@
 	}
 	.formDivsLabel {
 		height:20px;
+		margin:5px 5px;
 	}
-	.inputDiv span {
+	.inputDiv label {
 		vertical-align:bottom;
-		margin-bottom:0;
-		margin-left:5px;
 		display:inline-block;
 		padding:0px;
 	}
-	.contact input[type='text'] {
-		width:80vw;
+	.contact #nId, #eId {
+		width:65%;
 		border:none;
 		height:30px;
 		text-align:left;
 		vertical-align:top;
+		background-color:#AFDCEC;
+		outline:none;
+		padding:0;
+		margin:0;
+		text-align:left;
 	}
 	.contact input[type='text']:hover {
-		border-bottom:3px solid orange;
+		
 	}
 	textarea:hover {
-		border-bottom:3px solid orange;
+		
 	}
 	textarea {
-		width:80vw;
+		width:50%;
 		order:none;
 		border:none;
 		text-align:left;
-
+		outline:none;
 		height:70px;
 		resize:none;
+		background-color:#AFDCEC;
 	}
-	#error1,#error2,#error3 {
-		color:red;
-		width:100vw;
-		text-align:left;
-		font-size:10px;
-		margin-top:0;
-
-	}
-	.contact input[type='button'] {
+	.contact input[type='submit'] {
 		background-color:darkorange;
  		color:black;
  		font-size: 18px;
@@ -485,7 +486,7 @@
  		margin-left:2px;
 
 	}
-	.contact input[type='button']:hover {
+	.contact input[type='submit']:hover {
 		color:white;
 		background-color:black;
 	}

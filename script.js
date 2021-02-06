@@ -41,48 +41,8 @@ function deskTopFun() {
 		document.getElementsByClassName("icons")[0].remove();
 		}
 }
-//Validate data and show Error
-function ValidateData() {
-	var x = document.getElementById('nId'),
-	    y = document.getElementById('eId'),
-	    z = document.getElementById('mId'),
-	   e1 = document.getElementById('error1'),
-	   e2 = document.getElementById('error2'),
-	   e3 = document.getElementById('error3'),
-	   cond1 = false,
-	   cond2 = false,
-	   cond3 = false;
 
-	  
-			if(!x.value.match(/^[a-zA-Z ]{2,30}$/)) {
-			e1.innerHTML ="Must be Alphabets only (Min. 2 and Max 30)";
-		}
-		else {
-			e1.innerHTML = "";
-			cond1 = true;
-		}
 
-		 if(!y.value.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
-				e2.innerHTML ="Must be Valid Email!";
-			}
-		else {
-			e2.innerHTML ="";
-			cond2 = true;
-		}
-
-		if(z.value == "" || z.value == " ") {
-				e3.innerHTML ="Message Can not be Empty!";
-			}
-		else {
-			e3.innerHTML = "";
-			cond3 = true;
-		}
-			
-		 if(cond1  && cond2  && cond3 ) {
-	   		alert("Thank You " + nId.value + "\nI will be back to you soon!!");
-		   }
-		
-	}
 
 //Menu Div
 function toggleMenu() {

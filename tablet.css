@@ -1,4 +1,4 @@
- @media only screen and (min-width: 768px) and (max-width: 1023.9px) {
+ @media only screen and (min-width: 768px) and (max-width: 2000px) {
 
 		body {border:2px solid blue;}
 		/*Top Bar*/	
@@ -428,6 +428,9 @@
 	.contact {
 		width:100vw;
 	}
+	.inputDiv {
+		width:100%;
+	}
 	.contact form {
 	background-color:aliceblue;
 	}
@@ -437,57 +440,54 @@
 	}
 	.formDivsLabel {
 		height:20px;
+		margin:5px 5px;
 	}
-	.inputDiv span {
+	.inputDiv label {
 		vertical-align:bottom;
-		margin-bottom:0;
-		margin-left:5px;
 		display:inline-block;
 		padding:0px;
 	}
-	.contact input[type='text'] {
-		width:70vw;
+	.contact #nId, #eId {
+		width:65%;
 		border:none;
 		height:30px;
 		text-align:left;
 		vertical-align:top;
+		background-color:#AFDCEC;
+		outline:none;
+		padding:0;
+		margin:0;
+		text-align:left;
 	}
 	.contact input[type='text']:hover {
-		border-bottom:3px solid orange;
+		
 	}
 	textarea:hover {
-		border-bottom:3px solid orange;
+		
 	}
 	textarea {
-		width:70vw;
+		width:50%;
 		order:none;
 		border:none;
 		text-align:left;
-
+		outline:none;
 		height:70px;
 		resize:none;
+		background-color:#AFDCEC;
 	}
-	#error1,#error2,#error3 {
-		color:red;
-		width:100vw;
-		text-align:left;
-		font-size:12px;
-		margin-top:0;
-
-	}
-	.contact input[type='button'] {
+	.contact input[type='submit'] {
 		background-color:darkorange;
  		color:black;
- 		font-size: 25px;
+ 		font-size: 18px;
  		padding:6px 6px;
  		border:none;
  		cursor:pointer;
-		border-radius:5px;
+		border-radius: 5px;
  		text-align: center;
  		margin-left:2px;
 
 	}
-	.contact input[type='button']:hover {
+	.contact input[type='submit']:hover {
 		color:white;
 		background-color:black;
 	}
