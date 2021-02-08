@@ -166,6 +166,7 @@
   		vertical-align:top;
   		display:none;
   		width:100%;
+  		transition:0.5s;
 	} 
 	.in_left .in_details p {
 		font-size:3.5vw;
@@ -634,12 +635,15 @@
 	right:25px;
 	bottom:90px;
 	z-index:1;
-	border:2px solid red;
+	border:2px solid #f70d1a;
 	text-align:center;
 	font-size:24px;
 	margin-bottom:5px;
 	cursor:pointer;
 	padding:5px;
+	transition:0.3s;
+	pointer-events:none;
+	opacity:0;
 }
 #g2Top span {
 	color:darkslategrey;
@@ -655,7 +659,7 @@
 	right:25px;
 	bottom:40px;
 	z-index:2;
-	border:2px solid red;
+	border:2px solid #f70d1a;
 	cursor:pointer;
 	
 }

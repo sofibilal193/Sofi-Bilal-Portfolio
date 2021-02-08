@@ -1,24 +1,27 @@
 var i =0;
 var names = document.getElementsByClassName("other_names");
+
 window.onload = function() {
 	upDown();//call for Show/Hide Names
 	
 	deskTopFun();//Call to move Elements
-};
 
+	showHideg2Top(); //Disable got to top button
+};
+//
 function upDown() {
 
-if(i == names.length) {
-i = 0;
-}
-for(var j=0;j<names.length;j++) {
-names[j].style.display = "none";
-}
-names[i].style.display = "block";
+	if(i == names.length) {
+		i = 0;
+	}
+	for(var j=0;j<names.length;j++) {
+		names[j].style.display = "none";
+	}
+	names[i].style.display = "block";
 
-i++;
+	i++;
 					
-setTimeout(upDown, 2000);
+	setTimeout(upDown, 2000);
 }
 
 
@@ -41,7 +44,20 @@ function deskTopFun() {
 		document.getElementsByClassName("icons")[0].remove();
 		}
 }
-
+document.onscroll = function(){
+	showHideg2Top();
+}
+function showHideg2Top() {
+	var g2TopBtn = document.getElementById("g2Top");
+	if(window.scrollY == 0 ) {
+		g2TopBtn.style.pointerEvents = 'none';
+		g2TopBtn.style.opacity = '0';
+	}
+	else {
+		g2TopBtn.style.pointerEvents = 'auto';
+		g2TopBtn.style.opacity = '1';
+	}
+}
 
 
 //Menu Div
@@ -65,7 +81,8 @@ function toggleMenu() {
 function moveScroll(clickedBtn) {
 	toggleMenu();
 	if(clickedBtn.name == 'home') {
-	document.querySelector("#bodyTag").scrollIntoView(true);
+	document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 	}
 	else if(clickedBtn.name == 'work') {
 	document.querySelector(".work").scrollIntoView(true);
@@ -88,6 +105,7 @@ function moveToTop() {
 	window.scrollTo(0,0);
 	//alert("hi");
 }
+
 
 /*
 onscroll = function(){
