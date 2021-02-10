@@ -478,7 +478,7 @@
 		width:100%;
 	}
 	.contact form {
-	background-color:aliceblue;
+	background-color:#AFDCEC;
 	}
 	.formDivs {
 		width:100%;
@@ -493,13 +493,13 @@
 		display:inline-block;
 		padding:0px;
 	}
-	.contact #nId, #eId {
-		width:65%;
+	.contact #name, #email {
+		width:60%;
 		border:none;
 		height:30px;
 		text-align:left;
 		vertical-align:top;
-		background-color:#AFDCEC;
+		
 		outline:none;
 		padding:0;
 		margin:0;
@@ -519,7 +519,7 @@
 		outline:none;
 		height:70px;
 		resize:none;
-		background-color:#AFDCEC;
+		
 	}
 	.contact input[type='submit'] {
 		background-color:darkorange;

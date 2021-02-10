@@ -105,7 +105,12 @@ function moveToTop() {
 	window.scrollTo(0,0);
 	//alert("hi");
 }
+function showMsgAftrSend() {
 
+
+	setTimeout(function(){ alert("Thank You!"); }, 2000);
+	
+}
 
 /*
 onscroll = function(){

@@ -447,7 +447,7 @@
 		display:inline-block;
 		padding:0px;
 	}
-	.contact #nId, #eId {
+	.contact #name, #email {
 		width:65%;
 		border:none;
 		height:30px;
