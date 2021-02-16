@@ -1,28 +1,14 @@
-var i =0;
-var names = document.getElementsByClassName("other_names");
-
 window.onload = function() {
-	upDown();//call for Show/Hide Names
+//	upDown();//call for Show/Hide Names
 	
 	deskTopFun();//Call to move Elements
 
 	showHideg2Top(); //Disable got to top button
 };
 //
-function upDown() {
+//let i =0;
+//const names = document.getElementsByClassName("other_names");
 
-	if(i == names.length) {
-		i = 0;
-	}
-	for(var j=0;j<names.length;j++) {
-		names[j].style.display = "none";
-	}
-	names[i].style.display = "block";
-
-	i++;
-					
-	setTimeout(upDown, 2000);
-}
 
 
 function deskTopFun() {
@@ -47,6 +33,7 @@ function deskTopFun() {
 document.onscroll = function(){
 	showHideg2Top();
 }
+
 function showHideg2Top() {
 	var g2TopBtn = document.getElementById("g2Top");
 	if(window.scrollY == 0 ) {
@@ -63,17 +50,25 @@ function showHideg2Top() {
 //Menu Div
 function toggleMenu() {
   document.getElementById('menuBtn').classList.toggle("change");  
-
   var y = document.getElementById("menuDiv");
-  var body = document.getElementById("bodyTag");
+  var container = document.querySelector('.container');
   //close
-  if(y.style.width == '100vw') {
-  	y.style.width = '0vw';
-  	body.style.overflow = 'auto';
+  if(y.style.height == '90vh') {
+  	//closed
+  	y.style.height = '0';
+  	y.style.bottom = '0';
+  	container.style.opacity = '1';
+  	container.style.pointerEvents = 'auto';
+  	document.body.style.overflow = 'auto';
+  	
   }
   else {//open
-  	y.style.width = '100vw';
-  	body.style.overflow = 'hidden';
+  	//opened
+  	y.style.height = '90vh';
+  	y.style.bottom = '40px';
+  	container.style.opacity = '0.8';
+  	container.style.pointerEvents = 'none';
+  	document.body.style.overflow = 'hidden';
   }
 
 }
@@ -105,20 +100,14 @@ function moveToTop() {
 	window.scrollTo(0,0);
 	//alert("hi");
 }
-function showMsgAftrSend() {
-
-
-	setTimeout(function(){ alert("Thank You!"); }, 2000);
-	
-}
 
 /*
-onscroll = function(){
-	if(document.querySelector("#bodyTag").pageYOffset() == '0' {
-		document.getElementById('g2Top').pageYOffset() == 
-	}
-	else {
-		document.getElementById('g2Top').style.display = 'block';
-	}
+
+function outSideClick(event) {
+
+    var box = document.getElementById('menuDiv');
+    if (event.target != box && event.target.parentNode != box){
+    	toggleMenu();
+    }
 }
 */

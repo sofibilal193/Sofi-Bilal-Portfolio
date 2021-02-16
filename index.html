@@ -4,11 +4,12 @@
 	<title>Sofi Bilal-Portfolio</title>
 	<meta charset="utf-8">
   	<meta name="description" content="Portfolia">
-  	<meta name="keywords" content="BilalAhmad Sofi, Sofi Bilal, Hidden Warrior, Sofi Bilal-Portfolio, Freedoom, Mudasir,JSSATE">
+  	<meta name="keywords" content="Bilal Ahmad Sofi,sofibilal193, Sofi Bilal, Hidden Warrior, Sofi Bilal-Portfolio, Freedoom, Mudasir,JSSATE Noida,">
   	<meta name="Developer" content="Sofi Bilal">
   	<meta name="application-name" content="Sofi Bilal Portfolio">
   	<meta name="robots" content="index, nofollow">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel = "icon" href = "logos/logo.jpg" type = "image/x-icon"> 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://kit.fontawesome.com/04847cf7d3.js" crossorigin="anonymous"></script>
 	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
@@ -19,13 +20,12 @@
 	<script type="text/javascript" src="script.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body id="bodyTag" onresize="deskTopFun();">
+<body id="bodyTag" onresize="deskTopFun();">	
 <div class="container" style="margin:auto;">
 	<div class="top_bar">
 		<div class="t_left" id="topBarDiv">
-			<img src="images/logo.jpg">
-			<h3>BILAL AHMAD SOFI</h3>
-			
+			<img src="logos/logo.jpg" >
+			<h1>BILAL AHMAD SOFI</h1>
 			<div class="seeMyCvDiv" id="see_myCV_Div">
 				<button href="#" onclick="window.open('https://drive.google.com/file/d/1K4rFndYBN-f6lpKfhSvjKp0n1N0KEAPf/view?usp=sharing');" class="seeMyCv" id="cvBtn">See My CV &nbsp;<i class="fa fa-file-pdf"></i></button>
 			</div>
@@ -37,20 +37,9 @@
 		</div>
 		<div class="in_left">
 			<div class="im_all">
-			<p class="brF">[&nbsp</p>
-			<p class="im">I am&nbsp</p>
-			<ul>
-				<li class="other_names" id="name" style="color:darkred;"> BILAL AHMAD SOFI</li>
-				<li class="other_names">Algorithm Enthusiast</li>
-				<li class="other_names">Data Structures Enthusiast</li>
-				<li class="other_names">a Researcher</li>
-				<li class="other_names">an AI Enthusiast</li>
-				<li class="other_names">a Full Stack Developer</li>
-				<li class="other_names">Programmer</li>
-				<li class="other_names">Social Activist</li>
-				<li class="other_names">Looser</li>
-			</ul>
-			<p class="brL"> ]</p>
+				<p class="im">I am&nbsp</p>
+				<p class="names"></p>
+				<p class="typing">|</p>
 			</div>
 			<br>
 			<div class="in_details">
@@ -60,26 +49,51 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+
+				const texts = [' BILAL AHMAD SOFI', ' AI Enthusiast',' Full Stack Developer', ' Social Ativist'];
+				let count = 0;
+				let index = 0;
+				let el = document.querySelector('.names');
+				//self invoked function
+				(function upDown() {
+					let currentText = ' ';
+					let letters = '';
+
+					if(count === 0 ) {
+						el.style.color = 'red';
+					}else {
+						el.style.color = 'black';
+					}
+
+					if(count === texts.length) {
+					count = 0;
+					}
+
+
+
+
+					currentText = texts[count];
+					letter = currentText.slice(0,++index);
+					el.textContent = letter;
+
+					if(letter.length === currentText.length) {
+						
+						count++;
+						index = 0;
+						
+					}
+
+					setTimeout(upDown, 300);
+			})();
+
+			</script>
+
 	<div class="work">
 		<div class="pub_head"><h1 class="heading" >WORK</h1></div>
 		<div class="publication">
 		<div class="pub_sub_Head subheads"><h2>PUBLICATIONS</h2> </div>
 		<div class="pub_room">
-			<div class="pub_box">
-				<div class="pub_head">
-					<p ><b>This is heading of published work, Still in process will be available soon.</b></p><br><br>
-				</div>
-				<div class="pub_on">
-					<p>The Journal where it has been been posted</p><br><br>
-				</div>
-				<div class="pub_date">
-					<p>Published: <i>Month, Year</i></p><br><br>
-				</div>
-				<div class="pub_btn">
-					<button>Read Full Text <i class="fa fa-book"></i></button>
-					
-				</div>
-			</div>
 			<div class="pub_box">
 				<div class="pub_head">
 					<p ><b>This is heading of published work, Still in process will be available soon.</b></p><br><br>
@@ -107,7 +121,7 @@
 				<div class="proj_head"><p><b>J&K Tourism Webiste</b></p></div>
 				<div class="proj_intro"><p>Website developed in by HTML,CSS,JavaScript,JQuery and Python-Django. Eases the travelers to explore the beautiful destinations of Jammu, Kashmir and Ladakh</p></div>
 				<div class="proj_date"><p>Published: <i>January, 2020</i></p></div><br>
-				<div class="proj_btn"><button  onclick="window.open('https://waytokashmir.com')">View Project <i class="fa fa-eye"></i></button></div>
+				<div class="proj_btn"><button  onclick="window.open('https://waytokashmir.surge.sh')">View Project <i class="fa fa-eye"></i></button></div>
 			</div>
 			<div class="proj_box"><br>
 				<div class="proj_icon"><img src="images/cnn.jpg"></div>
@@ -115,13 +129,6 @@
 				<div class="proj_intro"><p>Covnvolution Neural Network(CNN) Based Project colorizes the (Inputted) Grey-Scale image to (Outputted) Coloured Image.</p></div>
 				<div class="proj_date"><p>Published: <i>January, 2021</i></p></div><br>
 				<div class="proj_btn" onclick="window.open('https://drive.google.com/drive/folders/1WUf3YSnogfj__yyd1NjIi8ptLMUDAHR8?usp=sharing');"><button>View Project <i class="fa fa-eye"></i></button></div>
-			</div>
-			<div class="proj_box"><br>
-				<div class="proj_icon"><img src="images/homeautomationlogo.jfif"></div>
-				<div class="proj_head"><p><b>Home Automation</b></p></div>
-				<div class="proj_intro"><p>Home Appliances are controlled using Arduino-UNO and Android Application,. Specific message are transfered to Arduino through Android Application for specific commands of Arduino.</p></div>
-				<div class="proj_date"><p>Published: <i>January, 2021</i></p></div><br>
-				<div class="proj_btn"><button>View Project <i class="fa fa-eye"></i></button></div><br><br>
 			</div>
 		</div>
 	</div>
@@ -152,14 +159,6 @@
 			</div>
 			<div>
 				<span class="ik_name">Creative Strategy</span>
-			</div>
-		</div>
-		<div class="ik_box">
-			<div>
-				<i class="iconify" data-icon="fa-solid:pencil-ruler" data-inline="false"></i>
-			</div>
-			<div>
-				<span class="ik_name">Data Science</span>
 			</div>
 		</div>
 		</div>
@@ -255,23 +254,7 @@
 			<span class="fas fa-arrow-up"></span>
 		</div>
 		<br>
-		<div id="menuBtn" onclick="toggleMenu(this)">
-			<div class="barOne"></div>
-			<div class="barTwo"></div>
-			<div class="barThree"></div>
-		</div>
-		<div id="menuDiv">
-			<div class="menuSubDiv" id="menuSubDivId">
-				<br>
-				<button name="home" onclick="moveScroll(this);">HOME</button><br>
-				<button name="work" onclick="moveScroll(this);">Work</button><br>
-				<button name="skills" onclick="moveScroll(this);">Skills</button><br>
-				<button name="awAndCert" onclick="moveScroll(this);">Awards and Certifications</button>
-				<br>
-				<button name="AboutMe" onclick="moveScroll(this);">About Me</button><br>
-				<button name="contact"  onclick="moveScroll(this);">Contact</button>
-			</div>
-		</div>
+		
 		<!--Mail-->
 	<div class="iconsAndMail" id="bottomMaiAndIconDiv">
 		<div class="mailDiv" id="hireMeDiv">
@@ -300,5 +283,22 @@
 	<!-- Menu and Menu Div -->
 <!--input type="text" id="y" name="" style="position: fixed; bottom:0;width:100%;"-->
 </div>
+	<div id="menuDiv">
+			<div class="menuSubDiv" id="menuSubDivId">
+				<br>
+				<button name="home" onclick="moveScroll(this);">HOME</button><br>
+				<button name="work" onclick="moveScroll(this);">Work</button><br>
+				<button name="skills" onclick="moveScroll(this);">Skills</button><br>
+				<button name="awAndCert" onclick="moveScroll(this);">Awards and Certifications</button>
+				<br>
+				<button name="AboutMe" onclick="moveScroll(this);">About Me</button><br>
+				<button name="contact"  onclick="moveScroll(this);">Contact</button>
+			</div>
+		</div>
+		<div id="menuBtn" onclick="toggleMenu()">
+			<div class="barOne"></div>
+			<div class="barTwo"></div>
+			<div class="barThree"></div>
+		</div>
 </body>
 </html>

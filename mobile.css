@@ -9,14 +9,14 @@
 			}
 		body {
 			background-color:ghostwhite;
-			padding:0px 0px 0px 2px;
+			padding:0px 1px 0px 1px;
 			overflow-x: hidden;
 			margin-bottom:0px;
 			position:relative;
 			
 		}
 		.container {
-			width:100%;
+			width:auto;
 			margin:0;
 			padding:0;
 			position:relative;
@@ -24,6 +24,8 @@
 			margin-bottom:0px;
 			padding-bottom:0px;
 		}
+		
+
  @media only screen and (max-width: 767.9px) {
 
 /*Top Bar*/	
@@ -33,7 +35,7 @@
 			display:block;
 			height:20vh;
 
-		}
+		} 
 		.t_left {
 			height:100%;
 			display:inline-block;
@@ -49,7 +51,7 @@
 			float:left;
 			margin:0;
 		}
-		.t_left h3 {
+		.t_left h1 {
 			display:inline-block;
 			font-weight:bold;
 			font-size:6vw;
@@ -83,18 +85,18 @@
 		}
 		/*Mixed.................*/
 		.heading {
-			font-size:6vw;
+			font-size:5.5vw;
 			color:black;
 		}
 		.subheads {
-		font-size:3vw;
+		font-size:2.9vw;
 		color:darkslategrey;
 		width:100%;
 	}
 /*Introduction and gif*/
 	.intro {
-		width:100%;
-		height:75vh;
+		width:99%;
+		height:77vh;
 	}
 	.in_left {
 		width:100%;
@@ -108,7 +110,7 @@
 	}
 
 	.in_left p {
-		display:inline-block;
+		
 	}
 	/*......im..*/
 	.im {
@@ -116,58 +118,52 @@
 		font-size:5vw;
 		display:inline-block;
 		vertical-align:top;
-		margin-top:2%;
+		margin-top:3%;
 		float:left;
+		margin-left:15%;
 	}
-	.im_all {
+	.im_all p{
+		
 	}
 	.im_all{
 		vertical-align:top;
 		text-align:center;
 	}
+
 	.in_details { 
 		vertical-align:bottom;
 		text-align:center;
 		margin-top:10vh;
+
 	}
-	.brF, .brL {
-		color:darkorange;
+	.in_details p {
+		margin:auto;
+	}
+	.names {
 		font-weight:bold;
-		font-size:8vw;
+		font-size:5vw;
 		display:inline-block;
 		vertical-align:top;
-		margin-top:0px;
-		margin-bottom:0;
-	}
-	.brF {
+		margin-top:3%;
 		float:left;
-		margin-right:1%;
-	}
-	.brL {
-		float:right;
-		margin-right:;
 	}
 
-	.in_left ul{
-		display:inline-block;
-		vertical-align:top;
-		margin-top:2%;
-		margin-bottom:0px;
-		margin-left:1%;
-		padding:0px;
-		text-align:left;
-		float:left;
-	}
-	.in_left ul li {
-		list-style:none;
-		text-align:left;
+	.typing {
 		font-size:5vw;
-  		font-weight:bold;
-  		vertical-align:top;
-  		display:none;
-  		width:100%;
-  		transition:0.5s;
-	} 
+		vertical-align:top;
+		float:left;
+		width:1PX;
+		margin-top:2%;
+		animation: Blink 0.3s infinite ease;
+	}
+	@keyframes Blink {
+		0% {
+			opacity:0
+		};
+		100% {
+			opacity:1
+		};
+	}
 	.in_left .in_details p {
 		font-size:3.5vw;
 		padding-top:0;
@@ -189,13 +185,13 @@
 		height:30vw;
 		display:inline-block;
 		background-color:white;
-
 	}
 
 	/*Work ...*/
 
 	.work {
 		position:relative;
+		width:99%;
 	}
 	/*Publication*/
 	.publication {
@@ -353,16 +349,21 @@
 		}
 	/*Skills*/
 	.skills {
+		width:99%;
 	}
 	.ik_room {
-
+		overflow-x:visible;
+		overflow-y:hidden;
+		white-space:nowrap;
+  		width:auto;
+  		height:25vh;
 	}
 	.ik_box {
 	text-align:center;
-	width:24%;
-	margin:auto;
+	width:35%;
+	margin:0 1% 0 1%;
 	padding:0;
-	height:20vw;
+	height:100%;
 	display:inline-block;
 	vertical-align:top;
 	background-color:aliceblue;
@@ -372,24 +373,26 @@
 	}
 	.ik_box div:nth-child(1) {
 		height:50%;
-		font-size:3vw;
 		background-color:ghostwhite;
 		position:relative;
+		white-space:normal;
 	}
 	.iconify {
-		font-size:6vw;
+		font-size:8vw;
 		margin-top:10%;
+		white-space:normal;
 	}
 
 	.ik_box div:nth-child(2) {
 		height:50%;
-		font-size:4vw;
 		background-color:black;
 		color:white;
+		white-space:normal;
 	}
 	.ik_name {
-		font-size:2vw;
+		font-size:3.5vw;
 		vertical-align:text-bottom;
+		white-space:normal;
 	}
 	
 	/*Tools and Technologies*/
@@ -416,6 +419,9 @@
 		font-size:3vw;
 	}
 	/*Awards and certification*/
+	.AandC {
+		width:99%;
+	}
 	.AandC ul {
 		text-align:left;
 		padding:0px;
@@ -430,6 +436,7 @@
 	}
 	/*About Me*/
 	.abtMe {
+		width:99%;
 
 	}
 	.abt_dp_and_introDuc {
@@ -651,8 +658,8 @@
 }
 #menuBtn {
 	background-color:transparent;
-	width:28px;
-	height:28px;
+	width:30px;
+	height:30px;
 	padding:5px;
 	border-radius:50%;
 	position:fixed;
@@ -661,6 +668,8 @@
 	z-index:2;
 	border:2px solid #f70d1a;
 	cursor:pointer;
+	display:block;
+	box-sizing:content-box;
 	
 }
 .barOne, .barTwo, .barThree {
@@ -668,7 +677,7 @@
 	width:80%;
 	height:13%;
 	margin:15% auto 10% auto;
-	transition:0.3s;
+	transition:0.4s;
 }
 .change .barOne {
   -webkit-transform: rotate(-45deg) translate(-6px, 6px);
@@ -684,34 +693,34 @@
 /*Menu Div*/
  #menuDiv {
  	position:fixed;
- 	right:0;
- 	bottom:0vh;
- 	z-index:1;
- 	background-color:orange;
- 	width:0vw;
- 	height:100vh;
+ 	right:2vw;
+	bottom:40px;
+	height:0vh;
+ 	background-color:grey;
+ 	width:25vw;
  	border-radius:;
-	transition:0.3s;
+	transition:0.4s;
+	z-index:2;
 }
 .menuSubDiv {
 text-align:center;
 margin-top:5vh;
-width:100vw;
+width:100%;
 }
 .menuSubDiv button {
-	margin:5vh 5vh;
+	margin:0 0 40% 0;
 	font-weight:bold;
-	background-color:transparent;
-	border:2px solid black;
-	color:white;
-	font-size:20px;
+	background-color:white;
+	border-radius:5px;
+	font-size:16px;
+	max-width:95%;
+	
 }
 .menuSubDiv button:hover {
-	background-color:silver;
 	color:black;
 	transition:0.1s;
 	cursor:pointer;
-	padding:0px 2px 0px 2px;
+	font-size:17px;
 }
 }
 
