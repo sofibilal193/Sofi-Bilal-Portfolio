@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sofi Bilal-Portfolio</title>
+	<title>Sofi Bila Portfolio</title>
 	<meta charset="utf-8">
   	<meta name="description" content="Portfolia">
   	<meta name="keywords" content="Bilal Ahmad Sofi,sofibilal193, Sofi Bilal, Hidden Warrior, Sofi Bilal-Portfolio, Freedoom, Mudasir,JSSATE Noida,">
@@ -33,61 +33,67 @@
 	</div>
 	<div class="intro">
 		<div class="in_right">
-			<img src="images/logo.gif">
+			<img src="images/logo.gif"> 
 		</div>
 		<div class="in_left">
 			<div class="im_all">
 				<p class="im">I am&nbsp</p>
 				<p class="names"></p>
-				<p class="typing">|</p>
+				<p class="typing" id="typingSymb">|</p>
 			</div>
 			<br>
 			<div class="in_details">
 			<p>
-				Hello, I am Bilal Ahmad Sofi, Artificial Intelligence and Data Science Enthusiast and a Full Stack Developer.
+				Hello, I am Bilal Ahmad Sofi,a DS-Algo & Artificial Intelligence Enthusiast and a Full Stack Developer.
 			</p>
 			</div>
 		</div>
 	</div>
 	<script type="text/javascript">
-
-				const texts = [' BILAL AHMAD SOFI', ' AI Enthusiast',' Full Stack Developer', ' Social Ativist'];
-				let count = 0;
-				let index = 0;
+				const texts = [' BILAL AHMAD SOFI', ' A.I Enthusiast', 'DS-Algo Enthusiast', ' Full Stack Developer', ' Social Ativist'];
+				let count = 0; 
+				let index = 0; 
+				let col = '#FF0000';
 				let el = document.querySelector('.names');
+				let ty = document.querySelector('.typing');   
 				//self invoked function
-				(function upDown() {
-					let currentText = ' ';
-					let letters = '';
+				(function typingAnimation() {
+					let currentText = '';
+					let letters = ''; 
 
-					if(count === 0 ) {
-						el.style.color = 'red';
-					}else {
-						el.style.color = 'black';
-					}
+						el.style.color = col;
 
 					if(count === texts.length) {
 					count = 0;
 					}
-
-
-
-
-					currentText = texts[count];
+					currentText = texts[count]; 
 					letter = currentText.slice(0,++index);
 					el.textContent = letter;
 
 					if(letter.length === currentText.length) {
-						
 						count++;
 						index = 0;
-						
+						col = getRandomColor();
+						document.querySelector('#typingSymb').classList.remove('blinkTyping');
+						setTimeout(typingAnimation, 600); //wait for 1second after one element is displayed from Array
 					}
-
-					setTimeout(upDown, 300);
+					else {
+						document.querySelector('#typingSymb').classList.add('blinkTyping');
+					setTimeout(typingAnimation, 200);
+					}
 			})();
-
+			//get Random Color
+			function getRandomColor() {
+  			var letters = '0123456789ABCDEF';
+  			var color = '#';
+  			for (var i = 0; i < 6; i++) {
+    			color += letters[Math.floor(Math.random() * letters.length)];
+  			}
+			  //console.log(color);
+  return color;
+}
 			</script>
+			
 
 	<div class="work">
 		<div class="pub_head"><h1 class="heading" >WORK</h1></div>
@@ -96,17 +102,16 @@
 		<div class="pub_room">
 			<div class="pub_box">
 				<div class="pub_head">
-					<p ><b>This is heading of published work, Still in process will be available soon.</b></p><br><br>
+					<p ><b>Home Automation.</b></p><br><br>
 				</div>
 				<div class="pub_on">
-					<p>The Journal where it has been been posted</p><br><br>
+					<p style="text-align:left;">Journal: </p><br><br>
 				</div>
 				<div class="pub_date">
-					<p>Published: <i>Month, Year</i></p><br><br>
+					<p style="text-align:left;">Published: <i>Month, Year</i></p><br><br>
 				</div>
 				<div class="pub_btn">
 					<button>Read Full Text <i class="fa fa-book"></i></button>
-					
 				</div>
 			</div>
 		</div>
@@ -178,15 +183,15 @@
 					<li>JQuery</li>
 					<li>HTML</li>
 					<li>CSS</li>
-				</ul>
+				</ul> 
 		</div>
 	</div>
-	<br>
+	<br> 
 	<div class="AandC">
 		<div class="AnC_head">
 			<h1 class="heading">AWARDS AND CERTIFICATIONS</h1>
 		</div>
-		<div class="And-room">
+		<div class="And-room"> 
 			<ul>
 				<li><i class="fas fa-medal"></i></li>
 				<li><i class="fa fa-certificate" aria-hidden="true"></i> Wed Development with HTML, CSS and JavaScript. | Udemy </li>
@@ -203,7 +208,7 @@
 				<p>I am a 20-year old, from Rakhshalina Pampore J&K, living in Noida Delhi/NCR India. I am passionate about technology, particularly - Artificial Intelligence. I have been exploring, learning, and working with different technologies for around four years now. I wish to pursue a higher degree in Data Science and AI. I am solving problems related Programming, Data Structure, Algorithm and Database and I love reading books especially Novels.<br>
 				<b>If you wish to contact me, or hire me, you may use the form below, or drop me a mail.</b></p>
 			</div>
-		</div><br>
+		</div><br> 
 		<div class="info">
 			<ul class="info_mainUl">
 				<li class="infoLine"><i class="fa fa-birthday-cake" aria-hidden="true"></i> Born On 4th Sep, 2000</li><br>
@@ -246,7 +251,7 @@
 				<br>
 				<div class="formDivs"><input type="submit" onclick="showMsgAftrSend()" value="Send"></div>
 			</form>
-			<br><br>
+			<br><br> 
 		</div>
 	</div>
 	<!--Got to top , Menu button and Menu Div-->
@@ -254,7 +259,6 @@
 			<span class="fas fa-arrow-up"></span>
 		</div>
 		<br>
-		
 		<!--Mail-->
 	<div class="iconsAndMail" id="bottomMaiAndIconDiv">
 		<div class="mailDiv" id="hireMeDiv">
@@ -269,8 +273,6 @@
 			<a href="https://wa.me/917006698882" style="color:green;"><i class="fa fa-whatsapp"></i></a>
 		</div>
 	</div>
-		
-	
 	<div class="footer">
 		<div class="footer_center">
 			<span>Designed and Developed<br>by</span>

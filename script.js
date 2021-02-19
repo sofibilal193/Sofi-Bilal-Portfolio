@@ -1,14 +1,10 @@
 window.onload = function() {
-//	upDown();//call for Show/Hide Names
+	//upDown();//call for Show/Hide Names
 	
 	deskTopFun();//Call to move Elements
 
 	showHideg2Top(); //Disable got to top button
 };
-//
-//let i =0;
-//const names = document.getElementsByClassName("other_names");
-
 
 
 function deskTopFun() {
@@ -44,16 +40,14 @@ function showHideg2Top() {
 		g2TopBtn.style.pointerEvents = 'auto';
 		g2TopBtn.style.opacity = '1';
 	}
-}
-
-
+} 
 //Menu Div
 function toggleMenu() {
   document.getElementById('menuBtn').classList.toggle("change");  
   var y = document.getElementById("menuDiv");
   var container = document.querySelector('.container');
   //close
-  if(y.style.height == '90vh') {
+  if(y.style.height == '80vh') {
   	//closed
   	y.style.height = '0';
   	y.style.bottom = '0';
@@ -64,7 +58,7 @@ function toggleMenu() {
   }
   else {//open
   	//opened
-  	y.style.height = '90vh';
+  	y.style.height = '80vh';
   	y.style.bottom = '40px';
   	container.style.opacity = '0.8';
   	container.style.pointerEvents = 'none';

@@ -12,8 +12,7 @@
 			padding:0px 1px 0px 1px;
 			overflow-x: hidden;
 			margin-bottom:0px;
-			position:relative;
-			
+			position:relative;	
 		}
 		.container {
 			width:auto;
@@ -24,8 +23,6 @@
 			margin-bottom:0px;
 			padding-bottom:0px;
 		}
-		
-
  @media only screen and (max-width: 767.9px) {
 
 /*Top Bar*/	
@@ -54,10 +51,10 @@
 		.t_left h1 {
 			display:inline-block;
 			font-weight:bold;
-			font-size:6vw;
+			font-size:7vw;
 			vertical-align:top;
 			float:left;
-			margin:0;
+			margin-top:1px;
 		}
 
 		.seeMyCvDiv {
@@ -154,6 +151,8 @@
 		float:left;
 		width:1PX;
 		margin-top:2%;
+	}
+	.blinkTyping {
 		animation: Blink 0.3s infinite ease;
 	}
 	@keyframes Blink {
@@ -172,11 +171,10 @@
 		width:90%;
 		text-align:center;
 	}
-
 	.in_right {
 		width:100%;
 		display:inline-block;
-		float:right;
+		float: right;
 		text-align:center;
 		margin:5% auto 5% auto;
 	}
@@ -499,6 +497,7 @@
 		vertical-align:bottom;
 		display:inline-block;
 		padding:0px;
+		
 	}
 	.contact #name, #email {
 		width:60%;
@@ -693,11 +692,11 @@
 /*Menu Div*/
  #menuDiv {
  	position:fixed;
- 	right:2vw;
+ 	right:25px;
 	bottom:40px;
 	height:0vh;
  	background-color:grey;
- 	width:25vw;
+ 	width:auto;
  	border-radius:;
 	transition:0.4s;
 	z-index:2;
@@ -708,11 +707,11 @@ margin-top:5vh;
 width:100%;
 }
 .menuSubDiv button {
-	margin:0 0 40% 0;
+	margin:0 0 25% 0;
 	font-weight:bold;
 	background-color:white;
 	border-radius:5px;
-	font-size:16px;
+	font-size:20px;
 	max-width:95%;
 	
 }
@@ -722,6 +721,7 @@ width:100%;
 	cursor:pointer;
 	font-size:17px;
 }
+
 }
 
 
