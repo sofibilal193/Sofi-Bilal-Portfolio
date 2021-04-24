@@ -1,306 +1,371 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Sofi Bila Portfolio</title>
-	<meta charset="utf-8">
-  	<meta name="description" content="Portfolia">
-  	<meta name="keywords" content="Bilal Ahmad Sofi,sofibilal193, Sofi Bilal, Hidden Warrior, Sofi Bilal-Portfolio, Freedoom, Mudasir,JSSATE Noida,">
-  	<meta name="Developer" content="Sofi Bilal">
-  	<meta name="application-name" content="Sofi Bilal Portfolio">
-  	<meta name="robots" content="index, nofollow">
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<link rel = "icon" href = "logos/logo.jpg" type = "image/x-icon"> 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://kit.fontawesome.com/04847cf7d3.js" crossorigin="anonymous"></script>
-	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="mobile.css"><!--Mobile Styles-->
-	<link rel="stylesheet" type="text/css" href="tablet.css"><!--Tablet Styles-->
-	<link rel="stylesheet" type="text/css" href="desktop.css"><!--Desktop Styles-->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-	<script type="text/javascript" src="script.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
-<body id="bodyTag" onresize="deskTopFun();">	
-<div class="container" style="margin:auto;">
-	<div class="top_bar">
-		<div class="t_left" id="topBarDiv">
-			<img src="logos/logo.jpg" >
-			<h1>BILAL AHMAD SOFI</h1>
-			<div class="seeMyCvDiv" id="see_myCV_Div">
-				<button href="#" onclick="window.open('https://drive.google.com/file/d/1K4rFndYBN-f6lpKfhSvjKp0n1N0KEAPf/view?usp=sharing');" class="seeMyCv" id="cvBtn">See My CV &nbsp;<i class="fa fa-file-pdf"></i></button>
-			</div>
-		</div>
-	</div>
-	<div class="intro">
-		<div class="in_right">
-			<img src="images/logo.gif"> 
-		</div>
-		<div class="in_left">
-			<div class="im_all">
-				<p class="im">I am&nbsp</p>
-				<p class="names"></p>
-				<p class="typing" id="typingSymb">|</p>
-			</div>
-			<br>
-			<div class="in_details">
-			<p>
-				Hello, I am Bilal Ahmad Sofi,a DS-Algo & Artificial Intelligence Enthusiast and a Full Stack Developer.
-			</p>
-			</div>
-		</div>
-	</div>
-	<script type="text/javascript">
-				const texts = [' BILAL AHMAD SOFI', ' A.I Enthusiast', 'DS-Algo Enthusiast', ' Full Stack Developer', ' Social Ativist'];
-				let count = 0; 
-				let index = 0; 
-				let col = '#FF0000';
-				let el = document.querySelector('.names');
-				let ty = document.querySelector('.typing');   
-				//self invoked function
-				(function typingAnimation() {
-					let currentText = '';
-					let letters = ''; 
+    <title>Sofi Bila Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Portfolia">
+    <meta name="keywords" content="Bilal Ahmad Sofi,sofibilal193, Sofi Bilal, Hidden Warrior, Sofi Bilal-Portfolio, Freedoom, Mudasir,JSSATE Noida,">
+    <meta name="Developer" content="Sofi Bilal">
+    <meta name="application-name" content="Sofi Bilal Portfolio">
+    <meta name="robots" content="index, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logos/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/04847cf7d3.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="mobile.css">
+    <!--Mobile Styles-->
+    <link rel="stylesheet" type="text/css" href="tablet.css">
+    <!--Tablet Styles-->
+    <link rel="stylesheet" type="text/css" href="desktop.css">
+    <!--Desktop Styles-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    .anim {
+        background-color:white;
+        height:350px;
+        width:350px;
+        margin:auto;
+        position: relative;
+    }
+    .stack {
+        border:4px solid black;
+        border-top:none;
+        height:200px;
+        width:200px;
+        margin:auto;
+        position: absolute;
+        bottom:0;
+        align-self:center;
+        align-content:center;
+    }
+    </style>
+    <</head>
 
-						el.style.color = col;
+        <body id="bodyTag" onresize="deskTopFun();">
+            <div class="container" style="margin:auto;">
+                <div class="top_bar">
+                    <div class="t_left" id="topBarDiv">
+                        <img src="logos/logo.jpg">
+                        <h1>BILAL AHMAD SOFI</h1>
+                        <div class="seeMyCvDiv" id="see_myCV_Div">
+                            <button href="#" onclick="window.open('https://drive.google.com/file/d/1K4rFndYBN-f6lpKfhSvjKp0n1N0KEAPf/view?usp=sharing');" class="seeMyCv" id="cvBtn">See My CV &nbsp;<i class="fa fa-file-pdf"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro">
+                <!--    <div class="in_right">
+                       
+                    </div>
+                -->    <div class="in_left">
+                        <div class="im_all">
+                            <p class="im">I am&nbsp</p>
+                            <p class="names"></p>
+                            <p class="typing" id="typingSymb">|</p>
+                        </div>
+                        <br>
+                        <div class="in_details">
+                            <p>
+                                Hello, I am Bilal Ahmad Sofi,a DS-Algo & Artificial Intelligence Enthusiast and a Full Stack Developer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    const texts = [' BILAL AHMAD SOFI', ' A.I Enthusiast', 'DS-Algo Enthusiast', ' Full Stack Developer', ' Social Activist'];
+                    let count = 0;
+                    let index = 0;
+                    let col = '#FF0000';
+                    let el = document.querySelector('.names');
+                    let ty = document.querySelector('.typing');
+                    //self invoked function to pop up text
+                    (function typingAnimation() {
+                        let currentText = '';
+                        let letters = '';
 
-					if(count === texts.length) {
-					count = 0;
-					}
-					currentText = texts[count]; 
-					letter = currentText.slice(0,++index);
-					el.textContent = letter;
+                        el.style.color = col;
 
-					if(letter.length === currentText.length) {
-						count++;
-						index = 0;
-						col = getRandomColor();
-						document.querySelector('#typingSymb').classList.remove('blinkTyping');
-						setTimeout(typingAnimation, 600); //wait for 1second after one element is displayed from Array
-					}
-					else {
-						document.querySelector('#typingSymb').classList.add('blinkTyping');
-					setTimeout(typingAnimation, 200);
-					}
-			})();
-			//get Random Color
-			function getRandomColor() {
-  			var letters = '0123456789ABCDEF';
-  			var color = '#';
-  			for (var i = 0; i < 6; i++) {
-    			color += letters[Math.floor(Math.random() * letters.length)];
-  			}
-			  //console.log(color);
-  return color;
-}
-			</script>
-			
+                        if (count === texts.length) {
+                            count = 0;
+                        }
+                        currentText = texts[count];
+                        letter = currentText.slice(0, ++index);
+                        el.textContent = letter;
 
-	<div class="work">
-		<div class="pub_head"><h1 class="heading" >WORK</h1></div>
-		<div class="publication">
-		<div class="pub_sub_Head subheads"><h2>PUBLICATIONS</h2> </div>
-		<div class="pub_room">
-			<div class="pub_box">
-				<div class="pub_head">
-					<p ><b>Home Automation.</b></p><br><br>
-				</div>
-				<div class="pub_on">
-					<p style="text-align:left;">Journal: </p><br><br>
-				</div>
-				<div class="pub_date">
-					<p style="text-align:left;">Published: <i>Month, Year</i></p><br><br>
-				</div>
-				<div class="pub_btn">
-					<button>Read Full Text <i class="fa fa-book"></i></button>
-				</div>
-			</div>
-		</div>
-		</div>
-	
-	<br>
-	<div class="project">
-		<div class="subheads"><h2>PROJECTS</h2></div>
-		<div class="proj_room">
-			<div class="proj_box"><br>
-				<div class="proj_icon"><img src="images/waytok.png"></div>
-				<div class="proj_head"><p><b>J&K Tourism Webiste</b></p></div>
-				<div class="proj_intro"><p>Website developed in by HTML,CSS,JavaScript,JQuery and Python-Django. Eases the travelers to explore the beautiful destinations of Jammu, Kashmir and Ladakh</p></div>
-				<div class="proj_date"><p>Published: <i>January, 2020</i></p></div><br>
-				<div class="proj_btn"><button  onclick="window.open('https://waytokashmir.surge.sh')">View Project <i class="fa fa-eye"></i></button></div>
-			</div>
-			<div class="proj_box"><br>
-				<div class="proj_icon"><img src="images/cnn.jpg"></div>
-				<div class="proj_head"><p><b>Object Recognition and Image Colorization</b></p></div>
-				<div class="proj_intro"><p>Covnvolution Neural Network(CNN) Based Project colorizes the (Inputted) Grey-Scale image to (Outputted) Coloured Image.</p></div>
-				<div class="proj_date"><p>Published: <i>January, 2021</i></p></div><br>
-				<div class="proj_btn" onclick="window.open('https://drive.google.com/drive/folders/1WUf3YSnogfj__yyd1NjIi8ptLMUDAHR8?usp=sharing');"><button>View Project <i class="fa fa-eye"></i></button></div>
-			</div>
-		</div>
-	</div>
-	</div><br><br>
-	<div class="skills">
-		<div><h1 class="heading">SKILLS</h1></div>
-		<div class="ik_head subheads" ><h2>INDUSTRIAL KNOWLEDGE</h2></div>
-		<div class="ik_room">
-		<div class="ik_box">
-			<div>
-				<i class="iconify" data-icon="fa-solid:layer-group" data-inline="false"></i>
-			</div>
-			<div>
-				<span class="ik_name">Full Stack Development</span>
-			</div>
-		</div>
-		<div class="ik_box">
-			<div>
-				<i class="iconify" data-icon="fa-solid:file-alt" data-inline="false"></i>
-			</div>
-			<div>
-				<span class="ik_name">Research and Content Writing</span>
-			</div>
-		</div>
-		<div class="ik_box">
-			<div>
-				<i class="iconify" data-icon="fa-solid:chess-pawn" data-inline="false"></i>
-			</div>
-			<div>
-				<span class="ik_name">Creative Strategy</span>
-			</div>
-		</div>
-		</div>
-	</div>
-	<br>
-	<div class="TaT">
-		<div class="TaT_head subheads"><h2>TOOLS AND TECHNOLOGIES</h2></div>
-		<div class="TaT_room" style="width:100%;">
-				<ul>
-					<li>Algorithms Design and Analysis</li>
-					<li>Data Structures</li>
-					<li>SQL Database</li>
-					<li>C/C++</li>
-					<li>Python</li>
-					<li>Django</li>
-					<li>JavaScript</li>
-					<li>JQuery</li>
-					<li>HTML</li>
-					<li>CSS</li>
-				</ul> 
-		</div>
-	</div>
-	<br> 
-	<div class="AandC">
-		<div class="AnC_head">
-			<h1 class="heading">AWARDS AND CERTIFICATIONS</h1>
-		</div>
-		<div class="And-room"> 
-			<ul>
-				<li><i class="fas fa-medal"></i></li>
-				<li><i class="fa fa-certificate" aria-hidden="true"></i> Wed Development with HTML, CSS and JavaScript. | Udemy </li>
-				<li><i class="fa fa-certificate" aria-hidden="true"></i> Python and Django Full Stack web Developer Bootcamp | Udemy </li>
-			</ul> 
-		</div>
-	</div>
-	<br><br>
-	<div class="abtMe">
-		<div><h1 class="heading">ABOUT ME</h1></div>
-		<div class="abt_dp_and_introDuc">
-			<div class="dp"><br><img src="images/logo.jpg"></div>
-			<div class="introDuc">
-				<p>I am a 20-year old, from Rakhshalina Pampore J&K, living in Noida Delhi/NCR India. I am passionate about technology, particularly - Artificial Intelligence. I have been exploring, learning, and working with different technologies for around four years now. I wish to pursue a higher degree in Data Science and AI. I am solving problems related Programming, Data Structure, Algorithm and Database and I love reading books especially Novels.<br>
-				<b>If you wish to contact me, or hire me, you may use the form below, or drop me a mail.</b></p>
-			</div>
-		</div><br> 
-		<div class="info">
-			<ul class="info_mainUl">
-				<li class="infoLine"><i class="fa fa-birthday-cake" aria-hidden="true"></i> Born On 4th Sep, 2000</li><br>
-				<li class="infoLine"><i class="fa fa-map-marker" aria-hidden="true"></i> From Rakhshalna Pampore, Jammu and Kashmir</li><br>
-				<li class="infoLine"><i class="fa fa-flag" aria-hidden="true"></i> Live in Delhi, India</li><br>
-				<li class="infoLine"><i class="fas fa-book-reader"></i> Education: 
-					<ul>
-						<li>Bachelor of Computer Science and Engineeing, JSS Academy of Technical Education, Noida (2017-2021)</li><br>
-					</ul>
-				</li><br>
-				<li class="infoLine"><i class="fas fa-briefcase" aria-hidden="true"></i> Experience:
-					<ul>
-						<li>Subject Matter Expert (Freelance), CHEGG INDIA Pvt. Ltd.(Jan-2020 - Present)</li>
-						<br>
-						<li>Incharge and Social Media Manager (Voluntary), MUSHKIL KUSHA TRUST<sup>&#174;1989</sup> (july-2020 - Present)</li>
-						<br>
-						<li>Web Developer and Designer (Intern), THE SPARK FOUNDATION (Feb-2021 - Present)</li>
-					</ul>
-				</li><br>
-			</ul>
-		</div>
-	</div>
-	<br>
-	<div class="contact">
-		<div><h1 class="heading">GET IN TOUCH</h1></div>
-		<div class="inputDiv">
-			<form action="https://script.google.com/macros/s/AKfycbw2npBBQJNvMStuAvejarOH0NzOjfDa7tnk_pfCJMzwOYBP9is/exec" method="post">
-				<div class="formDivsLabel"><label id="nLabel">Name:</label></div>
-				<div class="formDivs">
-					<input type="name" id="name" name="name" required>
-				</div>
+                        if (letter.length === currentText.length) {
+                            count++;
+                            index = 0;
+                            col = getRandomColor();
+                            document.querySelector('#typingSymb').classList.remove('blinkTyping');
+                            setTimeout(typingAnimation, 600); //wait for 1second after one element is displayed from Array
+                        } else {
+                            document.querySelector('#typingSymb').classList.add('blinkTyping');
+                            setTimeout(typingAnimation, 200);
+                        }
+                    })();
+                    //get Random Color
+                    function getRandomColor() {
+                        var letters = '23456789ABCD';
+                        var color = '#';
+                        for (var i = 0; i < 6; i++) {
+                            color += letters[Math.floor(Math.random() * letters.length)];
+                        }
+                        //console.log(color);
+                        return color;
+                    }
+                </script>
+                <div class="work">
+                    <div class="pub_head">
+                        <h1 class="heading">WORK</h1>
+                    </div>
+                    <div class="publication">
+                        <div class="pub_sub_Head subheads">
+                            <h2>PUBLICATIONS</h2>
+                        </div>
+                        <div class="pub_room">
+                            <div class="pub_box">
+                                <div class="pub_head">
+                                    <p><b>Home Automation.</b></p><br><br>
+                                </div>
+                                <div class="pub_on">
+                                    <p style="text-align:left;">Journal: </p><br><br>
+                                </div>
+                                <div class="pub_date">
+                                    <p style="text-align:left;">Published: <i>Month, Year</i></p><br><br>
+                                </div>
+                                <div class="pub_btn">
+                                    <button>Read Full Text <i class="fa fa-book"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-				<div class="formDivsLabel"><span id="eLabel">Email:</span></div>
-				<div class="formDivs">
-					<input type="email" id="email" name="email" required></div>
-				
-				<div class="formDivsLabel"><span id="mLabel">Message:</span></div>
-				<div class="formDivs">
-					<textarea id="message" name="message" required></textarea></div>
-				<br>
-				<div class="formDivs"><input type="submit" onclick="showMsgAftrSend()" value="Send"></div>
-			</form>
-			<br><br> 
-		</div>
-	</div>
-	<!--Got to top , Menu button and Menu Div-->
-		<div id="g2Top" onclick="moveToTop()">
-			<span class="fas fa-arrow-up"></span>
-		</div>
-		<br>
-		<!--Mail-->
-	<div class="iconsAndMail" id="bottomMaiAndIconDiv">
-		<div class="mailDiv" id="hireMeDiv">
-			<p><span>Hire me: </span><a href="mailto:sofibilal193@gmail.com"> sofibilal193@gmail.com</a><br></p>
-		</div>
-		<div class="icons" id="iconDiv">
-			<a href="https://facebook.com/sofibilal193" style="color:blue;"><i class="fa fa-facebook"></i></a>
-			<a href="https://www.instagram.com/sofi_bilal__/" style="color:darkred;"><i class="fa fa-instagram"></i></a>
-			<a href="https://twitter.com/sofibilal193" style="color:blue;"><i class="fa fa-twitter"></i></a>
-			<a href="https://www.linkedin.com/in/bilal-ahmad-sofi-305b49141/" style="color:darkblue;"><i class="fa fa-linkedin"></i></a>
-			<a href="https://github.com/sofibilal193" style="color:black;"><i class="fa fa-github"></i></a>
-			<a href="https://wa.me/917006698882" style="color:green;"><i class="fa fa-whatsapp"></i></a>
-		</div>
-	</div>
-	<div class="footer">
-		<div class="footer_center">
-			<span>Designed and Developed<br>by</span>
-			<p>&#60;/Sofi-Bilal&#62;</p>
-		</div>
-		<div class="footer_right">
-			<span>Copyright &#169 2020. All rights Reserved</span>
-		</div>
-	</div>
-	<!-- Menu and Menu Div -->
-<!--input type="text" id="y" name="" style="position: fixed; bottom:0;width:100%;"-->
-</div>
-	<div id="menuDiv">
-			<div class="menuSubDiv" id="menuSubDivId">
-				<br>
-				<button name="home" onclick="moveScroll(this);">HOME</button><br>
-				<button name="work" onclick="moveScroll(this);">Work</button><br>
-				<button name="skills" onclick="moveScroll(this);">Skills</button><br>
-				<button name="awAndCert" onclick="moveScroll(this);">Awards and Certifications</button>
-				<br>
-				<button name="AboutMe" onclick="moveScroll(this);">About Me</button><br>
-				<button name="contact"  onclick="moveScroll(this);">Contact</button>
-			</div>
-		</div>
-		<div id="menuBtn" onclick="toggleMenu()">
-			<div class="barOne"></div>
-			<div class="barTwo"></div>
-			<div class="barThree"></div>
-		</div>
-</body>
+                    <br>
+                    <div class="project">
+                        <div class="subheads">
+                            <h2>PROJECTS</h2>
+                        </div>
+                        <div class="proj_room">
+                            <div class="proj_box"><br>
+                                <div class="proj_icon"><img src="images/waytok.png"></div>
+                                <div class="proj_head">
+                                    <p><b>J&K Tourism Website</b></p>
+                                </div>
+                                <div class="proj_intro">
+                                    <p>Website developed in by HTML,CSS,JavaScript,JQuery and Python-Django. Eases the travelers to explore the beautiful destinations of Jammu, Kashmir and Ladakh</p>
+                                </div>
+                                <div class="proj_date">
+                                    <p>Published: <i>January, 2020</i></p>
+                                </div><br>
+                                <div class="proj_btn"><button onclick="window.open('https://waytokashmir.surge.sh')">View Project <i class="fa fa-eye"></i></button></div>
+                            </div>
+                            <div class="proj_box"><br>
+                                <div class="proj_icon"><img src="images/cnn.jpg"></div>
+                                <div class="proj_head">
+                                    <p><b>Object Recognition and Image Colorization</b></p>
+                                </div>
+                                <div class="proj_intro">
+                                    <p>Covnvolution Neural Network(CNN) Based Project colorizes the (Inputted) Grey-Scale image to (Outputted) Coloured Image.</p>
+                                </div>
+                                <div class="proj_date">
+                                    <p>Published: <i>January, 2021</i></p>
+                                </div><br>
+                                <div class="proj_btn" onclick="window.open('https://drive.google.com/drive/folders/1WUf3YSnogfj__yyd1NjIi8ptLMUDAHR8?usp=sharing');"><button>View Project <i class="fa fa-eye"></i></button></div>
+                            </div>
+                            <div class="proj_box"><br>
+                                <div class="proj_icon"><img src="images/cnn.jpg"></div>
+                                <div class="proj_head">
+                                    <p><b>Twitter Bot</b></p>
+                                </div>
+                                <div class="proj_intro">
+                                    <p>Twitter bot to retweet Special Hashtags like #100DaysOfCode #30DaysOfCode #Developer.</p>
+                                </div>
+                                <div class="proj_date">
+                                    <p>Published: <i>March, 2021</i></p>
+                                </div><br>
+                                <div class="proj_btn" onclick="window.open('https://twitter.com/Bills_Bot');"><button>View Project <i class="fa fa-eye"></i></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br>
+                <div class="skills">
+                    <div>
+                        <h1 class="heading">SKILLS</h1>
+                    </div>
+                    <div class="ik_head subheads">
+                        <h2>INDUSTRIAL KNOWLEDGE</h2>
+                    </div>
+                    <div class="ik_room">
+                        <div class="ik_box">
+                            <div>
+                                <i class="iconify" data-icon="fa-solid:layer-group" data-inline="false"></i>
+                            </div>
+                            <div>
+                                <span class="ik_name">Full Stack Development</span>
+                            </div>
+                        </div>
+                        <div class="ik_box">
+                            <div>
+                                <i class="iconify" data-icon="fa-solid:file-alt" data-inline="false"></i>
+                            </div>
+                            <div>
+                                <span class="ik_name">Research and Content Writing</span>
+                            </div>
+                        </div>
+                        <div class="ik_box">
+                            <div>
+                                <i class="iconify" data-icon="fa-solid:chess-pawn" data-inline="false"></i>
+                            </div>
+                            <div>
+                                <span class="ik_name">Creative Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="TaT">
+                    <div class="TaT_head subheads">
+                        <h2>TOOLS AND TECHNOLOGIES</h2>
+                    </div>
+                    <div class="TaT_room" style="width:100%;">
+                        <ul>
+                            <li>Algorithms</li>
+                            <li>Data Structures</li>
+                            <li>RDBMS</li>
+                            <li>C/C++</li>
+                            <li>Python</li>
+                            <li>JavaScript/Node.js</li>
+                            <li>JQuery</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="AandC">
+                    <div class="AnC_head">
+                        <h1 class="heading">AWARDS AND CERTIFICATIONS</h1>
+                    </div>
+                    <div class="And-room">
+                        <ul>
+                            <li><i class="fas fa-medal"></i>ALIKA Academic Award 2017.</li>
+                            <li><i class="fa fa-certificate" aria-hidden="true"></i> Wed Development with HTML, CSS and JavaScript. | Udemy </li>
+                            <li><i class="fa fa-certificate" aria-hidden="true"></i> Python and Django Full Stack web Developer Bootcamp. | Udemy </li>
+                            <li><i class="fa fa-certificate" aria-hidden="true"></i> A.I Master Class Series. | Pantech Solutions </li>
+                        </ul>
+                    </div>
+                </div>
+                <br><br>
+                <div class="abtMe">
+                    <div>
+                        <h1 class="heading">ABOUT ME</h1>
+                    </div>
+                    <div class="abt_dp_and_introDuc">
+                        <div class="dp"><br><img src="images/logo.jpg"></div>
+                        <div class="introDuc">
+                            <p>I am a 20-year old, from Rakhshalina Pampore J&K, living in Noida Delhi/NCR India. I am passionate about technology, particularly - Artificial Intelligence. I have been exploring, learning, and working with different technologies
+                                for around four years now. I wish to pursue a higher degree in Data Science and AI. I am solving problems related Programming, Data Structure, Algorithm and Database and I love reading books especially Novels.<br>
+                                <b>If you wish to contact me, or hire me, you may use the form below, or drop me a mail.</b></p>
+                        </div>
+                    </div><br>
+                    <div class="info">
+                        <ul class="info_mainUl">
+                            <li class="infoLine"><i class="fa fa-birthday-cake" aria-hidden="true"></i> Born On 4th Sep, 2000</li><br>
+                            <li class="infoLine"><i class="fa fa-map-marker" aria-hidden="true"></i> From Rakhshalna Pampore, Jammu and Kashmir</li><br>
+                            <li class="infoLine"><i class="fa fa-flag" aria-hidden="true"></i> Live in Delhi, India</li><br>
+                            <li class="infoLine"><i class="fas fa-book-reader"></i> Education:
+                                <ul>
+                                    <li>Bachelor of Computer Science and Engineeing, JSS Academy of Technical Education, Noida (2017-2021)</li><br>
+                                </ul>
+                            </li><br>
+                            <li class="infoLine"><i class="fas fa-briefcase" aria-hidden="true"></i> Experience:
+                                <ul>
+                                    <li>Subject Matter Expert (Freelance), CHEGG INDIA Pvt. Ltd.(Jan-2020 - Present)</li>
+                                    <br>
+                                    <li>Incharge and Social Media Manager (Voluntary), MUSHKIL KUSHA TRUST<sup>&#174;1989</sup> (july-2020 - Present)</li>
+                                    <br>
+                                    <li>Web Developer and Designer (Intern), THE SPARK FOUNDATION (Feb-2021 - Mar-2021)</li>
+                                </ul>
+                            </li><br>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="contact">
+                    <div>
+                        <h1 class="heading">GET IN TOUCH</h1>
+                    </div>
+                    <div class="inputDiv">
+                        <form action="https://script.google.com/macros/s/AKfycbw2npBBQJNvMStuAvejarOH0NzOjfDa7tnk_pfCJMzwOYBP9is/exec" method="post">
+                            <div class="formDivsLabel"><label id="nLabel">Name:</label></div>
+                            <div class="formDivs">
+                                <input type="name" id="name" name="name" required>
+                            </div>
+
+                            <div class="formDivsLabel"><span id="eLabel">Email:</span></div>
+                            <div class="formDivs">
+                                <input type="email" id="email" name="email" required></div>
+
+                            <div class="formDivsLabel"><span id="mLabel">Message:</span></div>
+                            <div class="formDivs">
+                                <textarea id="message" name="message" required></textarea></div>
+                            <br>
+                            <div class="formDivs"><input type="submit" onclick="showMsgAftrSend()" value="Send"></div>
+                        </form>
+                        <br><br>
+                    </div>
+                </div>
+                <!--Got to top , Menu button and Menu Div-->
+                <div id="g2Top" onclick="moveToTop()">
+                    <span class="fas fa-arrow-up"></span>
+                </div>
+                <br>
+                <!--Mail-->
+                <div class="iconsAndMail" id="bottomMaiAndIconDiv">
+                    <div class="mailDiv" id="hireMeDiv">
+                        <p><span>Hire me: </span><a href="mailto:sofibilal193@gmail.com"> sofibilal193@gmail.com</a><br></p>
+                    </div>
+                    <div class="icons" id="iconDiv">
+                        <a href="https://facebook.com/sofibilal193" style="color:blue;"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sofi_bilal__/" style="color:darkred;"><i class="fa fa-instagram"></i></a>
+                        <a href="https://twitter.com/sofibilal193" style="color:blue;"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/bilal-ahmad-sofi-305b49141/" style="color:darkblue;"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/sofibilal193" style="color:black;"><i class="fa fa-github"></i></a>
+                        <a href="https://wa.me/917006698882" style="color:green;"><i class="fa fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="footer_center">
+                        <span>Designed and Developed<br>by</span>
+                        <p>&#60;/Sofi-Bilal&#62;</p>
+                    </div>
+                    <div class="footer_right">
+                        <span>Copyright &#169 2020. All rights Reserved</span>
+                    </div>
+                </div>
+                <!-- Menu and Menu Div -->
+                <!--input type="text" id="y" name="" style="position: fixed; bottom:0;width:100%;"-->
+            </div>
+            <div id="menuDiv">
+                <div class="menuSubDiv" id="menuSubDivId">
+                    <br>
+                    <button name="home" onclick="moveScroll(this);">HOME</button><br>
+                    <button name="work" onclick="moveScroll(this);">Work</button><br>
+                    <button name="skills" onclick="moveScroll(this);">Skills</button><br>
+                    <button name="awAndCert" onclick="moveScroll(this);">Awards and Certifications</button>
+                    <br>
+                    <button name="AboutMe" onclick="moveScroll(this);">About Me</button><br>
+                    <button name="contact" onclick="moveScroll(this);">Contact</button>
+                </div>
+            </div>
+            <div id="menuBtn" onclick="toggleMenu()">
+                <div class="barOne"></div>
+                <div class="barTwo"></div>
+                <div class="barThree"></div>
+            </div>
+        </body>
+
 </html>
