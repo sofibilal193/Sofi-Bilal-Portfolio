@@ -25,7 +25,11 @@ function deskTopFun() {
 		botmParent.insertBefore(iconBox, refChildBotm);
 		document.getElementsByClassName("icons")[0].remove();
 		}
+
+
+
 }
+//top button
 document.onscroll = function(){
 	showHideg2Top();
 }
@@ -46,6 +50,7 @@ function toggleMenu() {
   document.getElementById('menuBtn').classList.toggle("change");  
   var y = document.getElementById("menuDiv");
   var container = document.querySelector('.container');
+  
   //close
   if(y.style.height == '80vh') {
   	//closed
@@ -66,7 +71,7 @@ function toggleMenu() {
   }
 
 }
-
+//Menu buttons funtion
 function moveScroll(clickedBtn) {
 	toggleMenu();
 	if(clickedBtn.name == 'home') {

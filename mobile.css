@@ -28,7 +28,7 @@
      padding-bottom: 0px;
  }
  
- @media only screen and (max-width: 767.9px) {
+@media only screen and (max-width: 767.9px) {
      /*Top Bar*/
      body {}
      .container {
@@ -106,11 +106,6 @@
          margin: auto;
          padding: 0px;
      }
-     .work,
-     .intro,
-     .abtMe,
-     .contact {}
-     .in_left p {}
      /*......im..*/
      .im {
          font-weight: bold;
@@ -131,7 +126,7 @@
          text-align: center;
          margin-top: 10vh;
      }
-     .in_details p {
+     .in_details span {
          margin: auto;
      }
      .names {
@@ -140,7 +135,7 @@
          display: inline-block;
          vertical-align: top;
          margin-top: 3%;
-         float: left;
+         float: left; 
      }
      .typing {
          font-size: 5vw;
@@ -173,7 +168,7 @@
      .in_right {
          width: 100%;
          display: inline-block;
-         float: right;
+         float:right;
          text-align: center;
          margin: 5% auto 5% auto;
      }
@@ -425,6 +420,7 @@
      /*About Me*/
      .abtMe {
          width: 99%;
+         font-size:3vw;
      }
      .abt_dp_and_introDuc {
          width: 100%;
@@ -446,11 +442,8 @@
          width: 100%;
          margin: 2vh auto auto auto;
      }
-     .abt_dp_and_introDuc .introDuc p {
+     .abt_dp_and_introDuc .introDuc span {
          width: 100%;
-         padding: 0;
-         margin: 0;
-         font-size: 2.7vw;
          text-align: left;
      }
      .info {

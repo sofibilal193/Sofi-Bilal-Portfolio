@@ -1,43 +1,43 @@
- @media only screen and (min-width: 2001px) {
-
-		body {border:2px solid red;}
+ @media only screen and (min-width: 768px) {
+	.container {
+		width:80%;
+		float:right;
+	}
+		body {}
 		/*Top Bar*/	
 		.top_bar {
 			margin-top:1vh;
 			width:100%;
 			display:block;
-			border:2px solid black;
-			height:20vh;
-			
+			height:100px;
 		}
 		.t_left {
 			font-weight:bold;
-			font-size:40px;
+			font-size:2vw;
 			height:100%;
 			display:inline-block;
 			width:100%;
-			
-			
 		}
 		.t_left img {
 			display:inline-block;
-			width:8vw;
-			height:8vw;
+			width:3vw;
+			height:3vw;
 			vertical-align:top;
-			margin-top:;
 			border:none;
-			padding:2px;
+			padding:;
 			box-shadow: -10px -10px -10px grey;
+			margin-top:0;
 		}
-		.t_left h3 {
+		.t_left h1 {
 			display:inline-block;
 			font-weight:bold;
-			font-size:2vmax;
 			vertical-align:top;
-			margin-left:0;
+			font-size:1em;
+			margin-top:0.2em;
+			
 		}
 		.icons {
-			width:40%;
+			width:39%;
 			text-align:right;
 			display:inline-block;
 			vertical-align:top;
@@ -45,7 +45,7 @@
 		}
 		.icons a {
 			margin-right:1px;
-			font-size:3vw;
+			font-size:2vw;
 
 			}
 
@@ -57,15 +57,15 @@
 		.seeMyCvDiv button {
 			background-color: darkorange;
  			color:black;
- 			font-size:2vw;
+ 			font-size:1.5vw;
  			padding: 5px 5px;
  			border: none;
  			cursor: pointer;
 			border-radius: 5px;
  			font-weight:bold;
- 			vertical-align:;
+ 			vertical-align:top;
  			margin-right:10vw;
-
+			margin-top:1vh;
 		}
 		.seeMyCvDiv button:hover {
 			background-color: black;
@@ -73,34 +73,24 @@
 		}
 		/*Mixed.................*/
 		.heading {
-			font-size:5vw;
+			font-size:3vw;
 			color:black;
 		}
 		.subheads {
-		font-size:2vw;
+		font-size:1vw;
 		color:darkslategrey;
 		width:100%;
 	}
 /*Introduction and gif*/
 	.intro {
 		width:100%;
-		border:2px solid black;
 		height:80vh;
 	}
 	.in_left {
 		width:69%;
-		display:inline-block;
-		vertical-align:top;
-		
-	}
-	.work, .intro, .abtMe, .contact {
-		
-		
-	}
+		text-align:center;
+		}
 
-	.in_left p {
-		display:inline-block;
-	}
 	/*......im..*/
 	.im {
 		font-weight:bold;
@@ -108,75 +98,37 @@
 		display:inline-block;
 		vertical-align:top;
 		margin-top:6%;
-		float:left;
-	}
-	.im_all {
-		height:auto;
-		margin-top:5px;
-	}
-	.im_all, .in_details {
-		vertical-align:top;
+		margin-left:40%;
 		text-align:center;
+		
 	}
-	.brF, .brL {
-		color:darkorange;
+	.in_left .im_all span {
 		font-weight:bold;
-		font-size:8vw;
-		display:inline-block;
-		vertical-align:top;
-		margin-top:0px;
-		margin-bottom:0;
-	}
-	.brF {
-		float:left;
-		margin-right:1%;
-	}
-	.brL {
-		float:right;
-		margin-right:;
-	}
-
-	.in_left ul{
+		font-size:2vw;
 		display:inline-block;
 		vertical-align:top;
 		margin-top:6%;
-		margin-bottom:0px;
-		margin-left:1%;
-		padding:0px;
-		text-align:left;
 		float:left;
+		
 	}
-	.in_left ul li {
-		list-style:none;
-		text-align:left;
-		font-size:3vw;
-  		font-weight:bold;
-  		vertical-align:top;
-  		display:none;
-  		width:100%;
-	} 
-	.in_left .in_details p {
-		font-size:2.5vw;
-		padding-top:0;
-		margin-top:0;
+	.im_all {
+		width:100%;
+		display:inline-block;
+	}
+	.in_details {
+		width:60%;
+		text-align:center;
+		margin-top:5%;
+		display:inline-block;
+	}
+	.in_left .in_details span {
+		font-size:1vw;
 		font-family:sans-serif;
-		width:90%;
+		width:100%;
 		text-align:center;
 	}
 
-	.in_right {
-		width:30%;
-		display:inline-block;
-		float:right;
-		border:1px solid black;
-	}
-	.in_right img {
-		width:20vw;
-		height:20vw;
-		display:inline-block;
-		background-color:white;
-		float:left;
-	}
+	
 
 	/*Work ...*/
 
@@ -191,8 +143,8 @@
 	}
 	.pub_box {
 		text-align:left;
-		width:30vw;
-		height:45vw;
+		width:20vw;
+		height:25vw;
 		font-size:2.3vw;
 		display:inline-block;
 		background-color:aliceblue;
@@ -206,13 +158,13 @@
 		width:100%;
 	}
 	.pub_head {
-		font-size:0.8em;
+		font-size:0.7em;
 	}
 	.pub_on {
-		font-size:0.9em;
+		font-size:0.5em;
 	}
 	.pub_date {
-		font-size:0.8em;
+		font-size:0.4em;
 	}
 	.pub_btn {
 		width:100%;
@@ -225,7 +177,7 @@
 	.pub_btn button {
   		background-color: darkorange;
  		color: black;
- 		font-size: 8px;
+ 		font-size: 0.4em;
  		padding: 5px 5px;
  		border: none;
  		cursor: pointer;
@@ -241,9 +193,9 @@
 	.proj_room {}
 	.proj_box {
 		text-align:left;
-		width:28%;
+		width:18%;
 		font-size:2vw;
-		height:56vw;
+		height:25vw;
 		display:inline-block;
 		background-color:aliceblue;
 		padding-left:10px;
@@ -257,27 +209,31 @@
 		opacity:0.9;
 	 }
 	.proj_icon {
-		width:80%;
+		width:100%;
 		text-align:center;
+		vertical-align:top;
 	}
 	.proj_box img {
-		width:30px;
-		height:30px;
+		width:60px;
+		height:60px;
 		border-radius:50%;
 		text-align:center;
+		
 	}
 	.proj_head {
 		width:100%;
-		font-size:1.2em;
+		font-size:0.6em;
+		text-align:center;
 	}
 	.proj_intro {
 		width:100%;
-		font-size:0.9em;
+		font-size:0.5em;
 	}
 	.proj_date {
 		width:100%;
-		font-size:0.8em;
+		font-size:0.4em;
 		vertical-align:bottom;
+		position:absolute;
 	}
 	.proj_btn {
 		width:100%;
@@ -290,13 +246,14 @@
 	.proj_btn button {
 		background-color: darkorange;
  		color: black;
- 		font-size: 8px;
+ 		font-size:0.5em;
  		padding: 5px 5px;
  		border: none;
  		cursor: pointer;
 		border-radius: 5px;
  		text-align: center;
  		font-weight:bold;
+
 		
 		}
 	.proj_btn button:hover {
@@ -314,34 +271,35 @@
 	}
 	.ik_box {
 	text-align:center;
-	width:23%;
-	height:20vw;
+	width:15vw;
+	height:15vw;
 	display:inline-block;
 	vertical-align:top;
 	background-color:aliceblue;
 	transition: 0.2s;
 	box-shadow: 0 0 5px 2px grey;
+	font-size:2vw;
 	
 	}
 	.ik_box div:nth-child(1) {
 		height:50%;
-		font-size:3vw;
+		font-size:1vw;
 		background-color:ghostwhite;
 		position:relative;
 	}
 	.iconify {
-		font-size:6vw;
+		font-size:4vw;
 		margin-top:10%;
 	}
 
 	.ik_box div:nth-child(2) {
 		height:50%;
-		font-size:4vw;
+		font-size:;
 		background-color:black;
 		color:white;
 	}
 	.ik_name {
-		font-size:2vw;
+		font-size:0.7em;
 		vertical-align:text-bottom;
 	}
 	
@@ -352,6 +310,7 @@
 		vertical-align:top;
 		border-radius:50
 		margin:auto;
+		font-size:2vw;
 
 	}
 	.TaT_room ul {
@@ -359,36 +318,36 @@
 		float:left;
 		background-color:aliceblue;
 		margin:0;
-		padding-left:20px;
+		padding-left:5x;
 	}
 	.TaT_room li {
 		width:100%;
 		float:left;
 		padding:2px 2px;
 		margin-left:0px;
-		font-size:3vw;
+		font-size:0.6em;
 	}
 	/*Awards and certification*/
 	.AandC ul {
 		text-align:left;
 		padding:0px;
 		background-color:aliceblue;
+		font-size:2vw;
 	}
 	.AandC li {
 		list-style:none;
 		text-align:left;
 		margin-left:0;
-		font-size:2.5vw;
+		font-size:0.6em;
 		margin-top:1vh;
 	}
 	/*About Me*/
 	.abtMe {
-
+		font-size:1vw;
 	}
 	.abt_dp_and_introDuc {
 		width:100%;
 		text-align:center;
-
 	}
 	.abt_dp_and_introDuc .dp {
 		display:inline-block;
@@ -401,62 +360,60 @@
 		height:15vh;
 	}
 	.abt_dp_and_introDuc .introDuc {
+		width:80%;
 		display:inline-block;
 		vertical-align:top;
-		width:100%;
-		margin:2vh auto auto auto;
+		margin:0vh auto auto auto;
+		
 	}
-	.abt_dp_and_introDuc .introDuc p {
-		width:100%;
+	.abt_dp_and_introDuc .introDuc span {
+		
 		padding:0;
 		margin:0;
-		font-size:2.7vw;
-		text-align:left;
+		font-size:1.6em;
+		
 	}
 
 	.info {
-		width:100%;
-		font-size:2.9vw;
-		text-align:;
+		width:90%;
+		font-size:1em;
 	}
 	.info .info_mainUl {
 		padding:0;
 		margin:0;
 	}
-	
+	.info ul li ul li {
+		list-style:disc;
+	}
+	/*Form*/
 	.contact {
-		width:100vw;
+		width:90vw;
+		font-size:1.5vw;
 	}
 	.inputDiv {
 		width:100%;
+		margin-bottom:;
 	}
 	.contact form {
-	background-color:aliceblue;
+	width:40%;
+	background-color:#AFDCEC;
 	}
 	.formDivs {
 		width:100%;
-		margin:5px 5px;
+		margin-bottom:20px;
 	}
-	.formDivsLabel {
-		height:20px;
-		margin:5px 5px;
-	}
-	.inputDiv label {
-		vertical-align:bottom;
-		display:inline-block;
-		padding:0px;
-	}
-	.contact #nId, #eId {
-		width:65%;
+	.contact #name, #email {
+		width:90%;
 		border:none;
-		height:30px;
+		height:60px;
 		text-align:left;
 		vertical-align:top;
-		background-color:#AFDCEC;
+		background-color:aliceblue;
 		outline:none;
 		padding:0;
 		margin:0;
 		text-align:left;
+		font-size:1.2em;
 	}
 	.contact input[type='text']:hover {
 		
@@ -465,19 +422,20 @@
 		
 	}
 	textarea {
-		width:50%;
+		width:90%;
 		order:none;
 		border:none;
 		text-align:left;
 		outline:none;
-		height:70px;
+		height:200px;
 		resize:none;
-		background-color:#AFDCEC;
+		
+		font-size:1.2em;
 	}
 	.contact input[type='submit'] {
 		background-color:darkorange;
  		color:black;
- 		font-size: 18px;
+ 		font-size: 1em;
  		padding:6px 6px;
  		border:none;
  		cursor:pointer;
@@ -626,19 +584,20 @@
 /*Menu Div*/
  #menuDiv {
  	position:fixed;
- 	right:0;
+ 	left:0;
  	bottom:0vh;
- 	z-index:1;
  	background-color:orange;
- 	width:0vw;
+ 	width:20%;
  	height:100vh;
  	border-radius:;
 	transition:0.3s;
+	display:block;
+	
 }
 .menuSubDiv {
-text-align:center;
+text-align:left;
 margin-top:5vh;
-width:100vw;
+width:100;
 }
 .menuSubDiv button {
 	margin:5vh 5vh;
