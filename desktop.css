@@ -1,7 +1,7 @@
  @media only screen and (min-width: 768px) {
 	.container {
-		width:80%;
-		float:right;
+		width:70%;
+		margin:auto;
 	}
 		body {}
 		/*Top Bar*/	
@@ -109,7 +109,6 @@
 		vertical-align:top;
 		margin-top:6%;
 		float:left;
-		
 	}
 	.im_all {
 		width:100%;
@@ -389,6 +388,7 @@
 	.contact {
 		width:90vw;
 		font-size:1.5vw;
+		margin-left:2%;
 	}
 	.inputDiv {
 		width:100%;
@@ -524,10 +524,7 @@
 	}
 
 
-/*Menu Button and Function*/
-.up_menu {
-	
-}
+
 #g2Top {
 	background-color:transparent;
 	width:26px;
@@ -549,7 +546,7 @@
 	color:darkslategrey;
 	font-size:0.9em;
 }
-#menuBtn {
+/* #menuBtn {
 	background-color:transparent;
 	width:28px;
 	height:28px;
@@ -613,5 +610,5 @@ width:100;
 	transition:0.1s;
 	cursor:pointer;
 	padding:0px 2px 0px 2px;
-}
+} */
 }
