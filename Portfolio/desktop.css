@@ -1,0 +1,614 @@
+ @media only screen and (min-width: 768px) {
+	.container {
+		width:70%;
+		margin:auto;
+	}
+		body {}
+		/*Top Bar*/	
+		.top_bar {
+			margin-top:1vh;
+			width:100%;
+			display:block;
+			height:100px;
+		}
+		.t_left {
+			font-weight:bold;
+			font-size:2vw;
+			height:100%;
+			display:inline-block;
+			width:100%;
+		}
+		.t_left img {
+			display:inline-block;
+			width:3vw;
+			height:3vw;
+			vertical-align:top;
+			border:none;
+			padding:;
+			box-shadow: -10px -10px -10px grey;
+			margin-top:0;
+		}
+		.t_left h1 {
+			display:inline-block;
+			font-weight:bold;
+			vertical-align:top;
+			font-size:1em;
+			margin-top:0.2em;
+			
+		}
+		.icons {
+			width:39%;
+			text-align:right;
+			display:inline-block;
+			vertical-align:top;
+
+		}
+		.icons a {
+			margin-right:1px;
+			font-size:2vw;
+
+			}
+
+		.seeMyCvDiv {
+			width:100%;
+			display:inline-block;
+			text-align:right;
+		}
+		.seeMyCvDiv button {
+			background-color: darkorange;
+ 			color:black;
+ 			font-size:1.5vw;
+ 			padding: 5px 5px;
+ 			border: none;
+ 			cursor: pointer;
+			border-radius: 5px;
+ 			font-weight:bold;
+ 			vertical-align:top;
+ 			margin-right:10vw;
+			margin-top:1vh;
+		}
+		.seeMyCvDiv button:hover {
+			background-color: black;
+  			color: white;
+		}
+		/*Mixed.................*/
+		.heading {
+			font-size:3vw;
+			color:black;
+		}
+		.subheads {
+		font-size:1vw;
+		color:darkslategrey;
+		width:100%;
+	}
+/*Introduction and gif*/
+	.intro {
+		width:100%;
+		height:80vh;
+	}
+	.in_left {
+		width:69%;
+		text-align:center;
+		}
+
+	/*......im..*/
+	.im {
+		font-weight:bold;
+		font-size:3vw;
+		display:inline-block;
+		vertical-align:top;
+		margin-top:6%;
+		margin-left:40%;
+		text-align:center;
+		
+	}
+	.in_left .im_all span {
+		font-weight:bold;
+		font-size:2vw;
+		display:inline-block;
+		vertical-align:top;
+		margin-top:6%;
+		float:left;
+	}
+	.im_all {
+		width:100%;
+		display:inline-block;
+	}
+	.in_details {
+		width:60%;
+		text-align:center;
+		margin-top:5%;
+		display:inline-block;
+	}
+	.in_left .in_details span {
+		font-size:1vw;
+		font-family:sans-serif;
+		width:100%;
+		text-align:center;
+	}
+
+	
+
+	/*Work ...*/
+
+	.work {
+		margin-top:1vw;
+	}
+	/*Publication*/
+	.publication {
+  		
+	}
+	.pub_room {
+	}
+	.pub_box {
+		text-align:left;
+		width:20vw;
+		height:25vw;
+		font-size:2.3vw;
+		display:inline-block;
+		background-color:aliceblue;
+		padding-left:10px;
+		margin-right:15px;
+		transition: 0.2s;
+		box-shadow: 0 0 5px 2px grey;
+		position:relative;
+	}
+	.pub_head, .pub_on, .pub_date, .pub_btn {
+		width:100%;
+	}
+	.pub_head {
+		font-size:0.7em;
+	}
+	.pub_on {
+		font-size:0.5em;
+	}
+	.pub_date {
+		font-size:0.4em;
+	}
+	.pub_btn {
+		width:100%;
+		vertical-align:bottom;
+		position:absolute;
+		bottom:5px;
+		width:90%;
+		text-align:left;
+	}
+	.pub_btn button {
+  		background-color: darkorange;
+ 		color: black;
+ 		font-size: 0.4em;
+ 		padding: 5px 5px;
+ 		border: none;
+ 		cursor: pointer;
+		border-radius: 5px;
+ 		text-align: center;
+ 		font-weight:bold;
+		}
+	.pub_btn button:hover {
+		background-color: black;
+  		color: white;
+		}
+		/*Projects*/
+	.proj_room {}
+	.proj_box {
+		text-align:left;
+		width:18%;
+		font-size:2vw;
+		height:25vw;
+		display:inline-block;
+		background-color:aliceblue;
+		padding-left:10px;
+		margin-right:4px;
+		vertical-align:top;
+		position:relative;
+		transition: 0.2s;
+		box-shadow: 0 0 5px 2px grey;
+	}
+	.proj_box:hover { 
+		opacity:0.9;
+	 }
+	.proj_icon {
+		width:100%;
+		text-align:center;
+		vertical-align:top;
+	}
+	.proj_box img {
+		width:60px;
+		height:60px;
+		border-radius:50%;
+		text-align:center;
+		
+	}
+	.proj_head {
+		width:100%;
+		font-size:0.6em;
+		text-align:center;
+	}
+	.proj_intro {
+		width:100%;
+		font-size:0.5em;
+	}
+	.proj_date {
+		width:100%;
+		font-size:0.4em;
+		vertical-align:bottom;
+		position:absolute;
+	}
+	.proj_btn {
+		width:100%;
+		vertical-align:bottom;
+		position:absolute;
+		bottom:5px;
+		width:90%;
+		text-align:left;
+	}
+	.proj_btn button {
+		background-color: darkorange;
+ 		color: black;
+ 		font-size:0.5em;
+ 		padding: 5px 5px;
+ 		border: none;
+ 		cursor: pointer;
+		border-radius: 5px;
+ 		text-align: center;
+ 		font-weight:bold;
+
+		
+		}
+	.proj_btn button:hover {
+		background-color: black;
+  		color: white;
+		}
+	.proj_btn button:focus {
+			border:none;
+		}
+	/*Skills*/
+	.skills {
+	}
+	.ik_room {
+
+	}
+	.ik_box {
+	text-align:center;
+	width:15vw;
+	height:15vw;
+	display:inline-block;
+	vertical-align:top;
+	background-color:aliceblue;
+	transition: 0.2s;
+	box-shadow: 0 0 5px 2px grey;
+	font-size:2vw;
+	
+	}
+	.ik_box div:nth-child(1) {
+		height:50%;
+		font-size:1vw;
+		background-color:ghostwhite;
+		position:relative;
+	}
+	.iconify {
+		font-size:4vw;
+		margin-top:10%;
+	}
+
+	.ik_box div:nth-child(2) {
+		height:50%;
+		font-size:;
+		background-color:black;
+		color:white;
+	}
+	.ik_name {
+		font-size:0.7em;
+		vertical-align:text-bottom;
+	}
+	
+	/*Tools and Technologies*/
+	.TaT_room {
+		width:49%;
+		display:inline-block;
+		vertical-align:top;
+		border-radius:50
+		margin:auto;
+		font-size:2vw;
+
+	}
+	.TaT_room ul {
+		text-align:left;
+		float:left;
+		background-color:aliceblue;
+		margin:0;
+		padding-left:5x;
+	}
+	.TaT_room li {
+		width:100%;
+		float:left;
+		padding:2px 2px;
+		margin-left:0px;
+		font-size:0.6em;
+	}
+	/*Awards and certification*/
+	.AandC ul {
+		text-align:left;
+		padding:0px;
+		background-color:aliceblue;
+		font-size:2vw;
+	}
+	.AandC li {
+		list-style:none;
+		text-align:left;
+		margin-left:0;
+		font-size:0.6em;
+		margin-top:1vh;
+	}
+	/*About Me*/
+	.abtMe {
+		font-size:1vw;
+	}
+	.abt_dp_and_introDuc {
+		width:100%;
+		text-align:center;
+	}
+	.abt_dp_and_introDuc .dp {
+		display:inline-block;
+		width:100vw;
+		margin-right:1vw;
+	}
+	.abt_dp_and_introDuc .dp img {
+		border-radius:50%;
+		width:15vh;
+		height:15vh;
+	}
+	.abt_dp_and_introDuc .introDuc {
+		width:80%;
+		display:inline-block;
+		vertical-align:top;
+		margin:0vh auto auto auto;
+		
+	}
+	.abt_dp_and_introDuc .introDuc span {
+		
+		padding:0;
+		margin:0;
+		font-size:1.6em;
+		
+	}
+
+	.info {
+		width:90%;
+		font-size:1em;
+	}
+	.info .info_mainUl {
+		padding:0;
+		margin:0;
+	}
+	.info ul li ul li {
+		list-style:disc;
+	}
+	/*Form*/
+	.contact {
+		width:90vw;
+		font-size:1.5vw;
+		margin-left:2%;
+	}
+	.inputDiv {
+		width:100%;
+		margin-bottom:;
+	}
+	.contact form {
+	width:40%;
+	background-color:#AFDCEC;
+	}
+	.formDivs {
+		width:100%;
+		margin-bottom:20px;
+	}
+	.contact #name, #email {
+		width:90%;
+		border:none;
+		height:60px;
+		text-align:left;
+		vertical-align:top;
+		background-color:aliceblue;
+		outline:none;
+		padding:0;
+		margin:0;
+		text-align:left;
+		font-size:1.2em;
+	}
+	.contact input[type='text']:hover {
+		
+	}
+	textarea:hover {
+		
+	}
+	textarea {
+		width:90%;
+		order:none;
+		border:none;
+		text-align:left;
+		outline:none;
+		height:200px;
+		resize:none;
+		
+		font-size:1.2em;
+	}
+	.contact input[type='submit'] {
+		background-color:darkorange;
+ 		color:black;
+ 		font-size: 1em;
+ 		padding:6px 6px;
+ 		border:none;
+ 		cursor:pointer;
+		border-radius: 5px;
+ 		text-align: center;
+ 		margin-left:2px;
+
+	}
+	.contact input[type='submit']:hover {
+		color:white;
+		background-color:black;
+	}
+		
+	.abtMe li {
+		list-style:none;
+	}
+	/*Icons and Mail*/
+	.iconsAndMail {
+		width:100%;
+		background-color:black;
+		padding-top:5px;
+	}
+	
+	.mailDiv {
+		width:100%;
+		color:white;
+		text-align:center;
+		vertical-align:bottom;
+	}
+	.mailDiv p { 
+		font-size:14px;
+		padding:0;
+		margin:0;
+		color:white;
+		
+	}
+	.mailDiv p a {
+		text-decoration:none;
+		color:aliceblue;
+	}
+
+		/*Footer*/
+	.footer {
+		width:100%;
+		background-color:black;
+		text-align:center;
+		margin-bottom:0px;
+	}
+
+	.footer_center {
+		width:100%;
+		display:inline-block;
+		height:100%;
+	}
+	
+.footer_center {
+	color:white;
+	text-align:center;
+	margin-top:10px;
+}
+.footer_center span {
+	font-size:1.2vw;
+}
+.footer_center p {
+	width:30%;
+	margin:auto;
+	padding:5px;
+	font-size:15px;
+	font-weight:bold;
+	font-style: oblique;
+	margin:0px auto 0px auto;
+}
+.footer_right {
+		margin-top:0;
+		width:100%;
+		color:white;
+		display:inline-block;
+		vertical-align:top;
+		text-align:center;
+	}
+	.footer_right span {
+		font-size:10px;
+		padding:1px;
+		color:orangered;
+		font-weight:bold;
+	}
+
+
+
+#g2Top {
+	background-color:transparent;
+	width:26px;
+	height:26px;
+	padding:5px;
+	border-radius:50%;
+	position:fixed;
+	right:25px;
+	bottom:90px;
+	z-index:1;
+	border:2px solid red;
+	text-align:center;
+	font-size:24px;
+	margin-bottom:5px;
+	cursor:pointer;
+	padding:5px;
+}
+#g2Top span {
+	color:darkslategrey;
+	font-size:0.9em;
+}
+/* #menuBtn {
+	background-color:transparent;
+	width:28px;
+	height:28px;
+	padding:5px;
+	border-radius:50%;
+	position:fixed;
+	right:25px;
+	bottom:40px;
+	z-index:2;
+	border:2px solid red;
+	cursor:pointer;
+	
+}
+.barOne, .barTwo, .barThree {
+	background-color:darkslategrey;
+	width:80%;
+	height:13%;
+	margin:15% auto 10% auto;
+	transition:0.3s;
+}
+.change .barOne {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.change .barTwo {opacity: 0;}
+
+.change .barThree {
+  -webkit-transform: rotate(45deg) translate(-5px, -5px);
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+/*Menu Div*/
+ #menuDiv {
+ 	position:fixed;
+ 	left:0;
+ 	bottom:0vh;
+ 	background-color:orange;
+ 	width:20%;
+ 	height:100vh;
+ 	border-radius:;
+	transition:0.3s;
+	display:block;
+	
+}
+.menuSubDiv {
+text-align:left;
+margin-top:5vh;
+width:100;
+}
+.menuSubDiv button {
+	margin:5vh 5vh;
+	font-weight:bold;
+	background-color:transparent;
+	border:2px solid black;
+	color:white;
+	font-size:20px;
+}
+.menuSubDiv button:hover {
+	background-color:silver;
+	color:black;
+	transition:0.1s;
+	cursor:pointer;
+	padding:0px 2px 0px 2px;
+} */
+}

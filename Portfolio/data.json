@@ -1,0 +1,95 @@
+{
+
+
+"publication":	{
+		"name": [
+				"Home Automation"
+				],
+				"journal" : [
+					"kcuh bhi"
+				],
+				"date": [
+					"kcuh bhi"
+				],
+				"link": [
+					"kuch bhi"
+				]
+},
+
+"project":{	
+	"image": [
+			"images/waytok.png",
+			"images/cnn.jpg",
+			"images/cnn.jpg",
+			"images/cnn.jpg"
+	],
+	"name": [
+			"J&K Tourism website",
+			"Object Recognition",
+			"Twitter Bot",
+			"Home Automation"
+	],
+	"details": [
+			"Website developed in by HTML,CSS,JavaScript,JQuery and Python-Django. Eases the travelers to explore the beautiful destinations of Jammu, Kashmir and Ladakh",
+			"Covnvolution Neural Network(CNN) Based Project colorizes the (Inputted) Grey-Scale image to (Outputted) Coloured Image.",
+			"Twitter bot to retweet Specific Hashtags like #100DaysOfCode #30DaysOfCode developed in Javascript/Nodejs and deployed on Heroku.",
+			"Arduino UNO based Home Automation controlled by Android App"
+				],
+	"date": [
+			"January, 2020",
+			"January, 2021",
+			"March, 2021",
+			"March, 2021"
+			], 
+	"links": [
+			"hello",
+			"feb 2021",
+			"feb 2022",
+			"https://twitter.com/Bills_Bot"
+			]
+},
+
+"industrial_Knowledge": {
+	"icon": [
+			"fa-solid:file-alt",
+			"fa-solid:chess-pawn"
+
+			],
+	"name": [
+			"Research and Content Writing",
+			"Creative Strategy"
+			]
+},
+
+"tools_and_tech": {
+	"list":[
+			"Algorithm",
+			"Data Structure",
+			"RDBMS",
+			"C/C++",
+			"Python",
+			"Django",
+			"JavaScript",
+			"JqQuery",
+			"HTML",
+			"CSS" 
+		]
+},
+"awards_and_cert": {
+	"list": [
+		
+	]
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
